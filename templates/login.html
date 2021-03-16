@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="wigth=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login-style.css">
   <title>Login page</title>
 </head>
 <body>
   <div class="barra">
     <h0 class="logo">RAL - Relatório Anual de Lavra</h0>
-  </div>  
+  </div>
   <div id="login_container">
     <h1>Login</h1>
     <form action="">
       <label1 for="Usuário, CPF ou CNPJ">Usuário, CPF ou CNPJ:</label1>
-      <input type="Usuário, CPF ou CNPJ" id="Usuário, CPF ou CNPJ" placeholder="Usuário, CPF ou CNPJ" autocomplete="off">
+      <input type="Usuário, CPF ou CNPJ" id="Usuário, CPF ou CNPJ" placeholder="Usuário, CPF ou CNPJ" autocomplete="off" required>
       <label for="Senha">Senha:</label>
-      <input type="password" name="Senha" id="Senha" placeholder="Senha" required>
+      <input type="password" name="Senha" id="Senha" placeholder="Senha" autocomplete="off" required>
       <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-      <input type="submit" value="Acessar">  
+      <div class="acesso">
+        <a href="file:///C:/ProjetoRAL/Menu/menu.html" class="acesso">Acessar</a>
+      </div>
     </form>
   </div>
 </body>

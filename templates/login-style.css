@@ -34,6 +34,38 @@ a:hover {
   right: 0;
   height: 100px;
 }
+/* GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #000000e1;
+  border: none;
+}
+
+body {
+  background-color: #fff;
+  background-size: cover;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+a, laber {
+  font-size: .8rem; /* 16 * .8 = x */
+}
+
+.barra {
+  background-color: #022a50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
 
 .logo {
   font-size: 40px;
@@ -69,7 +101,7 @@ label1, label, input{
   width: 100%;
   text-align: left;
   margin-top: 10px;
-} 
+}
 
 label1{
   font-weight: bold;
@@ -98,19 +130,21 @@ input:focus {
   display: block;
 }
 
-input[type="submit"] {
+.acesso {
+  text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: initial;
   font-weight: bold;
-  border: none;
+  border: 40px;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 13px;
   color: #fff;
-background-color: #00386d;
-cursor: pointer;
+  background-color: #003f7a;
+  font-size: 23px;
+  font-family: sans-serif;
+  cursor: pointer;
 }
 
-input[type="submit"]:hover{
-  background-color: #011b33;
+.acesso:hover{
   transition: .5s;
 }
