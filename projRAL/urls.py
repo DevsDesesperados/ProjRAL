@@ -19,11 +19,13 @@ from django.views.generic import RedirectView
 from django.conf.urls.static import static
 from django.conf import settings
 from core import views
-
+from templates import menu
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #   this line has a bug and i have no idea how to fix it...
+    #   good luck boys
     path('menu/', views.menu),
-    path('',RedirectView.as_view(url = '/menu/')),
-    path('login/',views.login_user)
+    path('', RedirectView.as_view(url = '/menu/')),
+    path('login/', views.login_user)
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
