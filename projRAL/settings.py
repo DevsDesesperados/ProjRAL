@@ -121,3 +121,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_copy')
+LOGIN_REDIRECT_URL = 'menu' #  redirect login - Belt (just wrote, have no idea how it works LMAO)
+#   Rodrigol plzzzzzz coloca o link do menu aqui em cima, so perdi ele....  XD

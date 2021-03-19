@@ -14,18 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.views.generic import RedirectView
 from django.conf.urls.static import static
 from django.conf import settings
 from core import views
-from templates import menu
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #   this line has a bug and i have no idea how to fix it...
     #   good luck boys
     path('menu/', views.menu),
     path('', RedirectView.as_view(url = '/menu/')),
-    path('login/', views.login_user)
+    path('login/', views.login_user),
+    path('accounts/', include('django.contrib.auth.urls')), #   account setting up XD - Belt
+
+    
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

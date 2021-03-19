@@ -13,7 +13,7 @@ def login_user(request):
 
 #  sets menu page
 def menu(request):
-    return render(request, 'menu/menu.html')
+    return render(request, 'menu.html')
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")

@@ -1,5 +1,5 @@
-  {% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -13,14 +13,16 @@
   </div>
   <div id="login_container">
     <h1>Login</h1>
-    <form action="">
+    <form action="" method="POST">
       <label1 for="Usuário, CPF ou CNPJ">Usuário, CPF ou CNPJ:</label1>
       <input type="Usuário, CPF ou CNPJ" id="Usuário, CPF ou CNPJ" placeholder="Usuário, CPF ou CNPJ" autocomplete="off" required>
       <label for="Senha">Senha:</label>
       <input type="password" name="Senha" id="Senha" placeholder="Senha" autocomplete="off" required>
       <a href="#" id="forgot-pass">Esqueceu a senha?</a>
       <div class="acesso">
-        <a href="file:///C:/ProjetoRAL/Menu/menu.html" class="acesso">Acessar</a>
+        {% csrf_token %}
+        {{ form.as_p }}
+      <button type="submit">Acessar</button>
       </div>
     </form>
   </div>
