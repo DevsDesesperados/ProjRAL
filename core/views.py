@@ -15,5 +15,7 @@ def login_user(request):
 def menu(request):
     return render(request, 'menu.html')
 
+def cadastro_legal(request):
+    return render(request, 'cadastro-legal.html')
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")

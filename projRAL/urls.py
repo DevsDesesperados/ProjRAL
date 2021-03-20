@@ -25,10 +25,10 @@ urlpatterns = [
     #   this line has a bug and i have no idea how to fix it...
     #   good luck boys
     path('menu/', views.menu),
-    path('', RedirectView.as_view(url = '/menu/')),
+    path('', RedirectView.as_view(url = '/login/')),
     path('login/', views.login_user),
-    path('accounts/', include('django.contrib.auth.urls')), #   account setting up XD - Belt
-
+    path('accounts/', include('django.contrib.auth.urls')), #   account setting up XD
+    path('cadastrolegal/', views.cadastro_legal),
     
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
