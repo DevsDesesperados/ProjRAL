@@ -25,10 +25,12 @@ urlpatterns = [
     #   this line has a bug and i have no idea how to fix it...
     #   good luck boys
     path('menu/', views.menu),
-    path('', RedirectView.as_view(url = '/login/')),
+    path('', RedirectView.as_view(url = '/menu/')),
     path('login/', views.login_user),
+    path('login/submit', views.login_submit),
+    path('logout/',views.logout_user),
     path('accounts/', include('django.contrib.auth.urls')), #   account setting up XD
-    path('cadastrolegal/', views.cadastro_legal),
+    path('menu/cadastrolegal/', views.cadastro_legal),
     
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

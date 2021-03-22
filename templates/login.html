@@ -13,9 +13,9 @@
   </div>
   <div id="login_container">
     <h1>Login</h1>
-    <form action="" method="POST">
+    <form action="submit" method="POST">
       <label1 for="Usuário, CPF ou CNPJ">Usuário, CPF ou CNPJ:</label1>
-      <input type="Usuário, CPF ou CNPJ" id="Usuário, CPF ou CNPJ" placeholder="Usuário, CPF ou CNPJ" autocomplete="off" required>
+      <input type="Usuário, CPF ou CNPJ" name="Usuário, CPF ou CNPJ" placeholder="Usuário, CPF ou CNPJ" autocomplete="off" required>
       <label for="Senha">Senha:</label>
       <input type="password" name="Senha" id="Senha" placeholder="Senha" autocomplete="off" required>
       <a href="#" id="forgot-pass">Esqueceu a senha?</a>
@@ -26,5 +26,10 @@
       </div>
     </form>
   </div>
+  {% for message in messages %}
+     <div align="center">
+          {{message}}
+      </div>
+  {% endfor %}
 </body>
 </html>

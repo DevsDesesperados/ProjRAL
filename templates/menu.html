@@ -23,7 +23,7 @@
           <i class="fa fa-bars"></i>
         </a>
         <ul class="ul-ral">
-          <li><a href="">
+          <li><a href="cadastrolegal/">
              Cadastro >> </a></li>
           <li><a href="">Direitos Minerários</a></li>
           <li><a href="">Informações Complementares</a></li>
@@ -80,10 +80,12 @@
       </li>
     </ul>
     <a href="" class="usuario">
-      Seja bem vindo, (nome do usuário)
+      {% for show in shows %}
+      Seja bem vindo,{{show.username}}
+      {% endfor %}
     <i class="fa fa-user-circle-o"></i>
     </a>
-    <a href="file:///C:/ProjetoRAL/Login/login.html" class="logout2">
+    <a href="/logout" class="logout2">
       Sair
       <i class="fa fa-times-circle"></i>
     </a>
