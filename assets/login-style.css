@@ -130,21 +130,22 @@ input:focus {
   display: block;
 }
 
-.acesso {
-  text-decoration: none;
-  text-align: center;
-  text-transform: initial;
-  font-weight: bold;
-  border: 40px;
-  border-radius: 15px;
-  margin-top: 13px;
-  color: #fff;
-  background-color: #003f7a;
-  font-size: 23px;
-  font-family: sans-serif;
-  cursor: pointer;
+.acesso [type="submit"]{
+ font-size: medium;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+border: none;
+height: 40px;
+width: 100%;
+border-radius: 20px;
+margin-top: 30px;
+color: #fff;
+background-color: #022a50;
+cursor: pointer;
 }
 
-.acesso:hover{
-  transition: .5s;
+.acesso [type="submit"]:hover{
+background-color: #034888;
+transition: .5s;
 }

@@ -67,10 +67,6 @@ ul li ul li{
   background-color: #011f3a ;
 }
 
-.ul-ral, .ul-lavra, .ul-beneficiamento, .ul-cadastro{
-  display: none;
-}
-
 .usuario{
   text-align: right;
   text-decoration: solid;

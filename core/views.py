@@ -45,5 +45,12 @@ def menu(request):
 
 def cadastro_legal(request):
     return render(request, 'cadastro-legal.html')
+
+def cadastro_tecnico(request):
+    return render(request, 'cadastro-tec.html')
+
+def cadastro_operacional(request):
+    return render(request, 'cadastro-operacional.html')
+
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")

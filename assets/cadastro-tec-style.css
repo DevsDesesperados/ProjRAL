@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+label{
+  margin-right: 2px;
+}
+
+input {
+  border-color: rgba(104, 101, 101, 0.411);
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 3px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+label:focus{
+   outline:none;
+}
+
+#main_container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(196, 190, 190, 0.247);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+body{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.barra-principal{
+  background-color: #022a50;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  color:#fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.barra2{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.cnpj{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.RS{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.barra-principal2{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-tec{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.name-tec{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.barra-principal3{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.buttons-CREA{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.button-CREA2{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+.buttons-ART{
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 30px;
+  margin-left: 15px;  
+}
+
+.barra-principal4{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+} 
+
+.authorization-dados{
+  margin-left: 8px;
+  margin-top: 20px;
+  color: #02294d;
+  font-size: 16px;
+}
+
+.button-accept{
+  margin-top: 25px;
+  margin-right: 850px;
+  color: #022a50;
+  font-size: 15px;
+}
+
+.button-accept2{
+  margin-right: 850px;
+  color: #022a50;
+  font-size: 15px;
+}
+
+.button-next{
+  margin-right: 120px;
+  margin-top: 40px;
+  text-align: center;
+}

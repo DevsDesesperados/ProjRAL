@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+label{
+  margin-right: 2px;
+}
+
+input {
+  border-color: rgba(104, 101, 101, 0.411);
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 3px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+label:focus{
+   outline:none;
+}
+
+.barra_principal{
+  background-color: #022a50;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  color:#fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+body{
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+#main_container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(196, 190, 190, 0.247);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.buttons{
+  margin-top: 30px;
+  font-size: 16px;
+  color: #022a50;
+  border-radius: 10px;
+}
+
+.button-anobase{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #022a50;
+  border-radius: 10px;
+}
+
+.button-virtude{
+  margin-top: 30px;
+  font-size: 16px;
+  color: #022a50;
+  border-radius: 10px;
+}
+
+.button_submit{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.barra-principal2{
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #022a50;
+  font-size: 13px;
+}
+
+.button-back-and-next{
+margin-top: 15px;
+}
+
+.records{
+  border-radius: 5px;
+background-color: #022a50d2;
+  color: #fff;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.records2{
+font-size: 15px;
+  margin-top: 12px;
+}
+
+.button_del{
+  border: none;
+  font-size: 20px;
+}

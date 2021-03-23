@@ -1,54 +1,75 @@
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
 }
- label{
-    display:block;
-    margin-left: auto;
- }
+label{
+margin-left: auto;
+}
 
- input {
-    border-radius: 10px;
- }
+input {
+  width: 24%;
+  padding: 2px;
+  border-radius: 10px;
+}
 
- label:focus{
-     outline:none;
- }
+label:focus{
+   outline:none;
+}
 
 .barra_principal{
-    background-color: #022a50;
-    font-family: sans-serif;
-    font-size: 27px;
-    color:#fff;
-    text-align: center;
-    border-radius: 20px;
+  background-color: #022a50;
+  font-family: sans-serif;
+  font-size: 27px;
+  color:#fff;
+  text-align: center;
+  border-radius: 20px;
 }
 
 body{
-    margin-top: 30px;
+  margin-top: 90px;
 }
 
 #main_container{
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(196, 190, 190, 0.247);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.exemplo{
-    color: rgba(136, 136, 136, 0.904);
-    font-size: 12px;
-    margin-top: 5px;
-    margin-left: 6px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(196, 190, 190, 0.247);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .button1{
-    margin-top: 5px;
-    font-size: 16px;
-    color: #022a50;
-    border-radius: 10px;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #022a50;
+  border-radius: 10px;
+}
+
+.exemplo{
+  color: rgba(136, 136, 136, 0.904);
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.button2{
+  color: #022a50;
+  padding: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.button_submit{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button_next{
+  text-align: right;
+  margin-top: 25px;
 }
