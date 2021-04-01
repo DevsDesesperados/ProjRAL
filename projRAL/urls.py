@@ -31,6 +31,9 @@ urlpatterns = [
                   path('logout/', views.logout_user),
                   path('accounts/', include('django.contrib.auth.urls')),  # account setting up XD
                   path('menu/cadastrolegal/', views.cadastro_legal),
+                  path('menu/cadastrolegal/submit', views.submit_cadastro_legal),
                   path('menu/cadastrotecnico/', views.cadastro_tecnico),
-                  path('menu/cadastrooperacional', views.cadastro_operacional)
+                  path('menu/cadastrotecnico/submit', views.submit_cadastro_tecnico),
+                  path('menu/cadastrooperacional/', views.cadastro_operacional),
+                  path('menu/cadastrooperacional/submit', views.submit_cadastro_operacional),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

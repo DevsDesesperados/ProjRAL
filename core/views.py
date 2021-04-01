@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import login,logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from core.models import Project, Engineer
 # Create your views here.
 
 #   sets who is the user and request to login
@@ -46,11 +47,32 @@ def menu(request):
 def cadastro_legal(request):
     return render(request, 'cadastro-legal.html')
 
+def submit_cadastro_legal(request):
+    if request.POST:
+        user = request.user
+        ANM = request.POST.get('Processo_anm')
+        substance = request.POST.get('substance')
+        use = request.POST.get('use')
+        if Project.objects.filter(ANM=ANM).exists():
+            Project.objects.filter(ANM=ANM).update(substance=substance,use=use)
+            messages.success(request,'Processo ANM modificado com sucesso')
+            return redirect('/menu/cadastrolegal')
+        else:
+            Project.objects.create(user=user, ANM=ANM, substance=substance, use=use)
+            messages.success(request, 'Processo ANM registrado com sucesso')
+            return redirect('/menu/cadastrolegal')
+    else:
+        return redirect('/menu/cadastrolegal')
 def cadastro_tecnico(request):
     return render(request, 'cadastro-tec.html')
+
+def submit_cadastro_tecnico(request):
+    pass
 
 def cadastro_operacional(request):
     return render(request, 'cadastro-operacional.html')
 
+def submit_cadastro_operacional(request):
+    pass
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
