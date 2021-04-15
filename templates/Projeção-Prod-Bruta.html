@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="proj-caract-prod-bruta-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>proj-caract-Prod-Bruta</title>
+</head>
+<body>
+  <div id="main_container">
+    <h1 class="barra-main">Lavra >> Produção Bruta >> Projeção e Característica da Produção Bruta</h1>
+
+  <div class="sub-barra">
+    <h2>Projeção e Característica da Produção Bruta</h2></div>
+
+  <div class="buttons-one">
+    <label for="Mina" style="margin-left: 290px;">Mina:</label>
+    <select id="" style="border-color: #000;">
+    <option value="select">--Selecione--</option></select> <!- This runs in the database ^^–>
+
+    <label for="Minério" style="margin-left: 60px;">Minério:</label>
+    <select id="" style="border-color: #000; ">
+    <option value="select" >--Selecione--</option></select> <!- This runs in the database ^^–>
+  </div>
+
+  <div class="table-one">
+    <table style="width:100%; margin-top: 20px;">
+      <tr>
+        <th style="padding: 10px 0px 0px;">Características Físicas do Minério:</th>
+        <th style="text-align: center; padding: 10px 0px 0px;">Características Químicas do Minério:</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="mina_name"></label>
+          <input type="text" name="mina_name" id="mina_name" style="width: 73%; height: 200px; ; margin-left: 65px;">
+        </td>
+        <td>
+          <label for="Minério" style="margin-left: 60px;"></label>
+          <input type="text" name="mina_name" id="mina_name" style="width: 70%; height: 200px; ; margin-left: 18px;">
+        </td>
+      </tr>
+      </table>
+  </div>
+
+  <div class="table-two">
+    <table style="width:100%; margin-top: 40px;">
+      <tr>
+        <th style="text-align: left;">Projeção da Produção Bruta:</th>
+        <th style="text-align: center;">Substância(s) não aproveitada(s) mas com o potencial de Aproveitamento:</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="mina_name">2021</label>
+          <input type="text" name="mina_name" id="mina_name" style="width: 50%;">t
+        </td>
+        <td>
+          <label for="Minério" style="margin-left: 60px;"></label>
+          <select id="" style="border-color: #000; width: 40%;">
+          <option value="submit">--Selecione--</option></select> <button type="submit" style="margin-left: 10px; border-color: rgb(56, 56, 56); border-radius: 5px; padding: 2px 3px 2px;">Adicionar</button> <!- This runs in the database ^^–>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="mina_name">2022</label>
+          <input type="text" name="mina_name" id="mina_name" style="width: 50%;">t
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="mina_name">2023</label>
+          <input type="text" name="mina_name" id="mina_name" style="width: 50%;">t
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="button-submit" >
+    <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px; border-color: #000;">Gravar</button>      <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px;  border-color: #000;">Novo</button>
+  </div>
+
+  </div>
+</body>
+</html>

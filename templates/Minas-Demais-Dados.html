@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="minas-demais-dados-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dados_basicos_minas-pag2</title>
+</head>
+<body>
+				<div id="main_container">
+        <h1 class="barra-main">Demais Dados</h1>
+      <div class="sub-barra">
+        <h2>Posicionamento Político:</h2>
+      </div>
+      <div class="button-one">
+        <label for=""></label>
+            <select id="posicionamento">
+              <option value="">--Selecione--</option>
+              <option value="Área de inundação de barragem">Área de inundação de barragem</option>
+              <option value="Área de expansão urbana">Área de expansão urbana</option>
+              <option value="Área de ocorrência de cavernas">Área de ocorrência de cavernas</option>
+              <option value="Área de perímetro urbano">Área de perímetro urbano</option>
+              <option value="Área indígena">Área indígena</option>
+              <option value="Faixa costeira (área de Marinha)">Faixa costeira (área de Marinha)</option>
+              <option value="Faixa de fronteira">Faixa de fronteira</option>
+              <option value="Leito de rio ou lago">Leito de rio ou lago</option>
+              <option value="Região metropolitana">Região metropolitana</option>
+              <option value="Sítio arqueológico">Sítio arqueológico</option>
+              <option value="Sítio paleontológico">Sítio paleontológico</option>
+              <option value="Unidade de conservação ambiental">Unidade de conservação ambiental</option>
+              <option value="Zona rural">Zona rural</option>
+              <option value="Outros">Outros</option></select> <div class="button-add"><button type="submit">Adicionar</button></div>
+      </div>
+      <div class="sub-barra2">
+        <h2>Coordenadas da Mina datum SIRGAS2000</h2>
+      </div>
+
+      <div class="button-select"><input type="radio" id="option" name="Norte do Equador" value="select"autocomplete="off"> <label for="option">Norte do Equador</label>
+      </div>
+      <div class="button-select">
+        <input type="radio" id="option" name="Sul do Equador" value="select"autocomplete="off"> <label for="option">Sul do Equador</label>
+      </div>
+
+      <div class="button-two">
+        <label for="latitude_name">Latitude: (XX°XX'XX"XXXX)</label>
+        <input type="text" name="latitude_name" id="latitude_name">
+
+      <div class="button-three">
+        <label for="longitude_name">Longitude: (XX°XX'XX"XXX)</label>
+        <input type="text" name="longitude_name" id="longitude_name">
+
+      <div class="example"><p>Exemplo de preenchimento dos campos de latitude ou longitude: 12°34'56"700</p></div>
+      </div></div>
+
+      <div class="sub-barra3">
+        <h2>Localização / Vias de Acesso:</h2>
+      </div>
+
+      <div class="text-box">
+        <label for=""></label>
+        <input type="text" name="text-box" id="text-box" style="width:990px; height: 40px;">
+      </div>
+
+      <div class="sub-barra4">
+        <h2>Esta mina possui de Fechamento de Mina?</h2>
+      </div>
+
+      <div class="button-select1">
+        <input type="radio" id="option" name="Sim" value="Sim"autocomplete="off"> <label for="option">Sim</label>  <input type="radio" id="option" name="Não" value="Não" autocomplete="off" > <label for="option">Não</label>
+      </div>
+
+      <div class="sub-barra5">
+        <h2>Previsão de Uso</h2>
+      </div>
+
+      <div class="button-four">
+        <label for="">Previsão do Uso da Área após o Fechamento da Mina</label>
+        <select id="posicionamento">
+          <option value="">--Selecione--</option>
+          <option value="Aeroclube">Aeroclube</option>
+          <option value="Ainda não definido">Ainda não definido</option>
+          <option value="Atividade esportiva comunitária">Atividade esportiva comunitária</option>
+          <option value="Disposição de resíduos, tratamento de esgotos">Disposição de resíduos, tratamento de esgotos</option>
+          <option value="Educação">Educação</option>
+          <option value="Habitação, loteamento">Habitação, loteamento </option>
+          <option value="Hotelaria">Hotelaria </option>
+          <option value="Indústria, Comércio">Indústria, Comércio</option>
+          <option value="Inundação">Inundação</option>
+          <option value="Lazer, recreação">Lazer, recreação</option>
+          <option value="Manancial hídrico para abastecimento">Manancial hídrico para abastecimento</option>
+          <option value="Outros usos">Outros usos</option>
+          <option value="Pastagens, horticultura, atividades agrícolas">Pastagens, horticultura, atividades agrícolas</option>
+          <option value="Piscicultura, pesca">Piscicultura, pesca</option>
+          <option value="Preenchimento com rejeito/estéril">Preenchimento com rejeito/estéril</option>
+          <option value="Reflorestamento com espécie">Reflorestamento com espécie nativa</option>
+          <option value="Reflorestamento comercial">Reflorestamento comercial</option>
+          <option value="Sistema viário">Sistema viário</option></select>
+      </div>
+
+      <div class="button-add1">
+        <button type="submit">Adicionar</button>
+      </div>
+
+    </div>
+</body>
+</hmtl>
