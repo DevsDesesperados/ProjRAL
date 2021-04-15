@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+label{
+  margin-right: 2px;
+}
+
+input {
+  border-color: rgba(104, 101, 101, 0.411);
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 3px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+label:focus{
+   outline:none;
+}
+
+#main_container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(196, 190, 190, 0.247);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+body{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.barra-main{
+  background-color: #022a50;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  color:#fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sub-barra{
+  text-align: center;
+  background-color: #022a50d2;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-one{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.button-add{
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.sub-barra2{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-select{
+  font-weight: bold;
+  color: #022a50;
+  font-size: 14px;
+  margin-right: 820px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.button-two{
+  font-weight: bold;
+  font-size: 15px;
+  color: #022a50;
+  margin-top:-55px;
+  text-align: right;
+}
+
+.button-three{
+  font-weight: bold;
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 5px;
+}
+
+.example{
+margin-top: 10px;
+color: #2c2c2c;
+font-size: 12px;
+
+}
+
+.sub-barra3{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.text-box{
+  margin-top: 10px;
+}
+
+.sub-barra4{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-select1{
+  font-weight: bold;
+  color: #022a50;
+  font-size: 14px;
+  margin-right: 800px;
+  margin-top: 20px;
+}
+
+.sub-barra5{
+  background-color: #022a50d2;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-four{
+  font-weight: bold;
+  font-size: 15px;
+  color: #022a50;
+  margin-top: 20px;
+}
+
+.button-add1{
+  margin-left: 10px;
+  margin-top: 17px;
+}
