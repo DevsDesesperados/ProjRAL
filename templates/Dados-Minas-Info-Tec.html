@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Dados-Minas-info-Tec-style.css">
+    <link rel="stylesheet" href="{% static 'Dados-Minas-info-Tec-style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dados_basicos_minas</title>
   </head>
@@ -20,10 +20,10 @@
       <! -- just not to get confused lol-->
       <p class="questionary">Lavra executada por terceiros?</p>
       <div class="button-accept">
-          <input type="radio" id="option" name="Sim" value="Sim"autocomplete="off"> <label for="option">Sim</label>
+          <input type="radio" class="option" name="Sim" value="Sim"autocomplete="off"> <label for="option">Sim</label>
       </div>
       <div class="button-accept">
-          <input type="radio" id="option" name="Não" value="Não" autocomplete="off" > <label for="option">Não</label>
+          <input type="radio" class="option" name="Não" value="Não" autocomplete="off" > <label for="option">Não</label>
       </div>
 
       <div class="barra-main2">
@@ -220,7 +220,7 @@
       </div>
       <div class="button-three">
           <label for="">Modalidade dos Métodos da Lavra:</label>
-          <select id="M_Lavra">
+          <select class="M_Lavra">
               <option value="">--Selecione--</option>
               <option value="">Céu Aberto</option>
               <option value="">Subterrânea</option>
@@ -228,7 +228,7 @@
       </div>
       <div class="button-four">
           <label for="">Métodos de Lavra:</label>
-          <select id="M_Lavra">
+          <select class="M_Lavra">
               <option value="">--Selecione--</option>
               <option value="">Lavra por bancada em encosta</option>
               <option value="">Lavra em bancada em cava</option>
@@ -274,7 +274,7 @@
       <div class="sub-barra4">
           <h2>Profundidade da Mina</h2></div>
 
-          <div class="form1"
+          <div class="form1">
           <label for="">Atual:</label>
           <input type="text" name="Actual" id="Actual" style="margin-right: 10px;"> 
 
@@ -310,22 +310,22 @@
           <h2>Uso de Explosivos</h2></div>
 
           <div class="form4">
-          <input type="radio" id="option" name="Sim" value="Sim"autocomplete="off">
+          <input type="radio" class="option" name="Sim" value="Sim"autocomplete="off">
           <label for="option">Sim</label>
-          <input type="radio" id="option" name="Não" value="Não" autocomplete="off" >
+          <input type="radio" class="option" name="Não" value="Não" autocomplete="off" >
           <label for="option">Não</label>
       </div>
 
       <div class="buttons-end">
           <label for="">Início de Operação:</label>
-          <input type="text" name="operation" id="" style="margin-right: 30px;">
+          <input type="text" name="operation" style="margin-right: 30px;">
 
           <label for="">Vida Útil Restante da Jazida/Mina:</label>
-          <input type="text" name="" id=""> Anos
+          <input type="text" name=""> Anos
 
       <div class="buttons-end1">
           <label for="">N. de Frentes de Lavra:</label>
-          <input type="text" name="" id=""  style="margin-right: 30px;">
+          <input type="text" name="" style="margin-right: 30px;">
 
           <label for="">Grau de Mecanização:</label>
           <select id="Mecanização">
