@@ -9,56 +9,58 @@
   <title>Caracterização_operacional</title>
 </head>
 <body>
-<div id="main_container">
-  <h1 class="barra_principal">Caracterização Operacional</h1>
-  <div class="buttons">
-    <label for="Processo_ANM">ANM:</label>
-    <input type="text" name="process_anm" id="processo_anm">
-</div>
-
-<div class="button-anobase">
-  <label for="Diploma_Legal" style="margin-right: 130px;">Diploma Legal: FULL--------</label> <label for="situação_operacional_ANOBASE">Situação Operacional por Ano-Base:</label>
-    <select id="ANO-BASE">
-      <option value="">--Selecione--</option>
-      <option value="">EM PRODUÇÃO NO ANO-BASE</option>
-      <option value="">LAVRA NÃO INICIADA NO ANO-BASE</option>
-      <option value="">PARALISADA DURANTE TODO O ANO-BASE</option>
-    </select>
-</div>
-
-<div class="button-virtude">
-  <label for="virtude">Em Virtude de:</label>
-  <select id="Virtude" style="margin-right: 15px;">
-    <option value="">--Selecione--</option>
-    <option value="">ÁREA INUNDADA</option>
-    <option value="">ÁREA INVADIDA POR TERCEIROS</option>
-    <option value="">EM FASE DE DESENVOLVIMENTO</option>
-    <option value="">NÃO OBTENÇÃO DE LICENÇA AMBIENTAL (L.O)</option>
-    <option value="">RAZÕES TÉCNICAS/ECONÔMICAS</option>
-    <option value="">REPLANEJAMENTO</option>
-    <option value="">Outros</option></select>  <label for="Motivo" >Especifique (Outros):</label>
-  <input type="text" name="Motivo" id="motivo">
+<form action="submit" method="POST"> {% csrf_token %}
+  <div id="main_container">
+    <h1 class="barra_principal">Caracterização Operacional</h1>
+    <div class="buttons">
+      <label for="Processo_ANM">ANM:</label>
+      <input type="text" name="Process_anm" id="processo_anm">
   </div>
 
-<div class="button_submit">
-  <button type="button" style="margin-right: 10px;">Gravar </button> <button type="button">Novo</button>
-</div>
+  <div class="button-anobase">
+    <label for="Diploma_Legal" style="margin-right: 130px;">Diploma Legal: FULL--------</label> <label for="situação_operacional_ANOBASE">Situação Operacional por Ano-Base:</label>
+      <select id="ANO-BASE" name="ANO-BASE">
+        <option value="">--Selecione--</option>
+        <option value="EM PRODUÇÃO NO ANO-BASE">EM PRODUÇÃO NO ANO-BASE</option>
+        <option value="LAVRA NÃO INICIADA NO ANO-BASE">LAVRA NÃO INICIADA NO ANO-BASE</option>
+        <option value="PARALISADA DURANTE TODO O ANO-BASE">PARALISADA DURANTE TODO O ANO-BASE</option>
+      </select>
+  </div>
 
-<div class="barra-principal2">
-  <h2>Todos os Registros >></h2>
-</div>
+  <div class="button-virtude">
+    <label for="virtude">Em Virtude de:</label>
+    <select id="Virtude" name= "Virtude" style="margin-right: 15px;">
+      <option value="">--Selecione--</option>
+      <option value="ÁREA INUNDADA">ÁREA INUNDADA</option>
+      <option value="ÁREA INVADIDA POR TERCEIROS">ÁREA INVADIDA POR TERCEIROS</option>
+      <option value="EM FASE DE DESENVOLVIMENTO">EM FASE DE DESENVOLVIMENTO</option>
+      <option value="NÃO OBTENÇÃO DE LICENÇA AMBIENTAL (L.O)">NÃO OBTENÇÃO DE LICENÇA AMBIENTAL (L.O)</option>
+      <option value="RAZÕES TÉCNICAS/ECONÔMICAS">RAZÕES TÉCNICAS/ECONÔMICAS</option>
+      <option value="REPLANEJAMENTO">REPLANEJAMENTO</option>
+      <option value="">Outros</option></select>  <label for="Motivo" >Especifique (Outros):</label>
+    <input type="text" name="Motivo" id="motivo">
+    </div>
 
-<div class="records">
-  <label for="" style="margin-right: 40px;"></label> <label for="ANM" style="margin-right: 40px;">ANM</label> <label for="situação_operacional">| Situação Operacional</label> <label for="virtude">| Virtude</label> <label for="motivo">| Motivo</label> <label for="data" style="margin-left: 390px;">| Data</label> <label for="delete" style="margin-left: 30px;">| Excluir</label>
-</div>
+  <div class="button_submit">
+    <button type="submit" style="margin-right: 10px;">Gravar </button> <button type="submit">Novo</button>
+  </div>
 
-  <div class="records2">
-   <label for="number" style="margin-left: 14px;">000.000/0000 </label> <label for="situação_operacional" style="margin-left: 40px;">FULL-----------</label> <label for="virtude" style="margin-left: 45px;">Outros</label> <label for="motivo" style="margin-left: 12px;">nisl ullamcorper integer sit fames est finibus mi pharetra.</label> <label for="data" style="margin-left: 33px;">00/00/00</label> <label for="number" style="margin-left: 50px;"><button class="button_del"><i class="fa fa-times-circle-o"></i></button></label>
-</div>
+  <div class="barra-principal2">
+    <h2>Todos os Registros >></h2>
+  </div>
 
-<div class="button-back-and-next">
-  <a href="/menu/cadastrolegal"><button type="button" style="margin-right: 850px;"><< Anterior</button></a> <button type="button">Próxima >></button>
-</div>
-</div>
+  <div class="records">
+    <label for="" style="margin-right: 40px;"></label> <label for="ANM" style="margin-right: 40px;">ANM</label> <label for="situação_operacional">| Situação Operacional</label> <label for="virtude">| Virtude</label> <label for="motivo">| Motivo</label> <label for="data" style="margin-left: 390px;">| Data</label> <label for="delete" style="margin-left: 30px;">| Excluir</label>
+  </div>
+
+    <div class="records2">
+     <label for="number" style="margin-left: 14px;">000.000/0000 </label> <label for="situação_operacional" style="margin-left: 40px;">FULL-----------</label> <label for="virtude" style="margin-left: 45px;">Outros</label> <label for="motivo" style="margin-left: 12px;">nisl ullamcorper integer sit fames est finibus mi pharetra.</label> <label for="data" style="margin-left: 33px;">00/00/00</label> <label for="number" style="margin-left: 50px;"><button class="button_del"><i class="fa fa-times-circle-o"></i></button></label>
+  </div>
+
+  <div class="button-back-and-next">
+    <a href="/menu/cadastrolegal"><button type="button" style="margin-right: 850px;"><< Anterior</button></a> <button type="button">Próxima >></button>
+  </div>
+  </div>
+</form>
 </body>
 </html>

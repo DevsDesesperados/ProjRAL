@@ -22,9 +22,17 @@ class Project(models.Model):
     substance = models.CharField(max_length=20)
     use = models.CharField(max_length=20)
 
+    def __str__(self):
+        return str(self.ANM)
+
+class CadastroOperacional(models.Model):
     #   cadastro operacional
-    operational_situation = ''
-    reason = ''
+    ANM_id = models.ForeignKey(Project, on_delete=models.CASCADE)
+    operational_situation = models.CharField(max_length=20)
+    reason = models.CharField(max_length=50)
+
+
+class CadastroTecnico(models.Model):
 
     #   cadastro tecnico
     cpf = Engineer.cpf

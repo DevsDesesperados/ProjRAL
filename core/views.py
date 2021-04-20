@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import login,logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from core.models import Project, Engineer
+from core.models import Project, Engineer, CadastroOperacional, CadastroTecnico
 # Create your views here.
 
 #   sets who is the user and request to login
@@ -44,8 +44,12 @@ def menu(request):
     response = {'shows':show}
     return render(request, 'menu.html', response)
 
+@login_required(login_url='/login/')
+
 def cadastro_legal(request):
     return render(request, 'cadastro-legal.html')
+
+@login_required(login_url='/login/')
 
 def submit_cadastro_legal(request):
     if request.POST:
@@ -55,24 +59,56 @@ def submit_cadastro_legal(request):
         use = request.POST.get('use')
         if Project.objects.filter(ANM=ANM).exists():
             Project.objects.filter(ANM=ANM).update(substance=substance,use=use)
-            messages.success(request,'Processo ANM modificado com sucesso')
+            messages.success(request,'Processo ANM_id modificado com sucesso')
             return redirect('/menu/cadastrolegal')
         else:
             Project.objects.create(user=user, ANM=ANM, substance=substance, use=use)
-            messages.success(request, 'Processo ANM registrado com sucesso')
+            messages.success(request, 'Processo ANM_id registrado com sucesso')
             return redirect('/menu/cadastrolegal')
     else:
         return redirect('/menu/cadastrolegal')
+
+@login_required(login_url='/login/')
+
 def cadastro_tecnico(request):
     return render(request, 'cadastro-tec.html')
 
 def submit_cadastro_tecnico(request):
     pass
 
+@login_required(login_url='/login/')
+
 def cadastro_operacional(request):
     return render(request, 'cadastro-operacional.html')
 
 def submit_cadastro_operacional(request):
-    pass
+    if request.POST:
+        user = request.user
+        ANM_submit = request.POST.get('Process_anm')
+        operational_situation = request.POST.get('ANO-BASE')
+        reason = request.POST.get('Virtude')
+        if Project.objects.filter(ANM=ANM_submit).exists():
+            ANM= Project.objects.get(ANM=ANM_submit)
+            CadastroOperacional.objects.create(ANM_id=ANM, operational_situation=operational_situation, reason=reason)
+            messages.success(request, 'Cadastro operacional registrado com sucesso')
+            return redirect('/menu/cadastrooperacional')
+    else:
+        return redirect('/menu/cadastrooperacional')
+
+def cadastrotec_lavra(request):
+    return render(request, 'cadastro-Tec-Lavra.html')
+
+def dados_minas(request):
+    return render(request,'Dados-Minas-Info-Tec.html')
+
+def demaisdados_minas(request):
+    return render(request,'Minas-Demais-Dados.html')
+
+def lavra_producaobruta(request):
+    return render(request,'Lavra-Prod-Bruta.html')
+
+def proj_producaobruta(request):
+    return render(request,'Projeção-Prod-Bruta.html')
+
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
