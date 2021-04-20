@@ -36,3 +36,5 @@ class Project(models.Model):
     elaboration_date = ''
     public_authorization = False
 
+
+

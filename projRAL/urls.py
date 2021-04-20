@@ -36,4 +36,13 @@ urlpatterns = [
                   path('menu/cadastrotecnico/submit', views.submit_cadastro_tecnico),
                   path('menu/cadastrooperacional/', views.cadastro_operacional),
                   path('menu/cadastrooperacional/submit', views.submit_cadastro_operacional),
-              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+                  path('menu/cadastroteclavra/', views.cadastro_tec_lavra),
+                  path('menu/cadastroteclavra/submit', views.submit_cadastro_tec_lavra),
+                  path('menu/dadosminas/', views.dados_minas),
+                  path('menu/dadosminas/submit', views.submit_dados_minas),
+                  path('menu/dadosminasinfotec/', views.dados_minas_info_tec),
+                  path('menu/dadosminasinfotec/submit', views.submit_dados_minas_info_tec),
+
+
+
+               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
