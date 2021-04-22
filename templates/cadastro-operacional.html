@@ -40,7 +40,9 @@
       <option value="">Outros</option></select>  <label for="Motivo" >Especifique (Outros):</label>
     <input type="text" name="Motivo" id="motivo">
     </div>
-
+  {% for message in messages %}
+        <strong>{{message}}</strong>
+    {% endfor %}
   <div class="button_submit">
     <button type="submit" style="margin-right: 10px;">Gravar </button> <button type="submit">Novo</button>
   </div>
@@ -54,8 +56,12 @@
   </div>
 
     <div class="records2">
-     <label for="number" style="margin-left: 14px;">000.000/0000 </label> <label for="situação_operacional" style="margin-left: 40px;">FULL-----------</label> <label for="virtude" style="margin-left: 45px;">Outros</label> <label for="motivo" style="margin-left: 12px;">nisl ullamcorper integer sit fames est finibus mi pharetra.</label> <label for="data" style="margin-left: 33px;">00/00/00</label> <label for="number" style="margin-left: 50px;"><button class="button_del"><i class="fa fa-times-circle-o"></i></button></label>
-  </div>
+      <ul>
+      {% for record in records %}
+        <li><label for="number" style="margin-left: 14px;">{{ record.ANM }} </label> <label for="situação_operacional" style="margin-left: 40px;">{{ record.operational_situation }}</label> <label for="virtude" style="margin-left: 45px;">{{ record.reason }}</label> <label for="motivo" style="margin-left: 12px;">nisl ullamcorper integer sit fames est finibus mi pharetra.</label> <label for="data" style="margin-left: 33px;">{{ record.get_creation_date }}</label> <label for="number" style="margin-left: 50px;"><button class="button_del"><i class="fa fa-times-circle-o"></i></button></label></li>
+      {% endfor %}
+      </ul>
+    </div>
 
   <div class="button-back-and-next">
     <a href="/menu/cadastrolegal"><button type="button" style="margin-right: 850px;"><< Anterior</button></a> <button type="button">Próxima >></button>

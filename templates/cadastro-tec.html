@@ -15,7 +15,7 @@
       <h2 class="cnpj">CNPJ: 00.000.000/0000-00</h2>
       <h2 class="RS">Razão Social: Mineração Nacional S.A.</h2>
 
-    <form id="Cadastro_tec_RAL">
+    <form id="Cadastro_tec_RAL" action="submit" method="POST"> {% csrf_token %}
         <div class="barra-principal2">
           <h2> Responsável pelo RAL >> Indentificação</h2></div>
         <div class="button-tec">  
@@ -28,48 +28,48 @@
 
         <div class="buttons-CREA">
           <label for="">Profissão:</label>
-        <select id="Profissão" style="margin-right: 50px;">
+        <select id="Profissão" name="Profissão" style="margin-right: 50px;">
           ><option value="">--Selecione--</option>
-          <option value="">Engenheiro de Minas</option>
-          <option value="">Geólogo</option>
-          <option value="">Geólogo de Engenharia</option>
+          <option value="Engenheiro de Minas">Engenheiro de Minas</option>
+          <option value="Geólogo">Geólogo</option>
+          <option value="Geólogo de Engenharia">Geólogo de Engenharia</option>
           <option value="">Outros...</option>
         </select>
         <label for="" >Número:</label>
-        <input type="text" name="Número" id="Número">
+        <input type="text" name="Número1" id="Número">
         </div>
 
         <div class="button-CREA2">
           <label for="">Jurisdição:</label>
-        <select id="jurisdiction"  style="margin-right: 110px;">
+        <select id="jurisdiction" name="jurisdiction"  style="margin-right: 110px;">
           <option value="">--Selecione--</option>
-          <option value="">CREA-AC</option>
-          <option value="">CREA-AL</option>
-          <option value="">CREA-AM</option>
-          <option value="">CREA-AP</option>
-          <option value="">CREA-BA</option>
-          <option value="">CREA-CE</option>
-          <option value="">CREA-DF</option>
-          <option value="">CREA-ES</option>
-          <option value="">CREA-GO</option>
-          <option value="">CREA-MA</option>
-          <option value="">CREA-MG</option>
-          <option value="">CREA-MS</option>
-          <option value="">CREA-MT</option>
-          <option value="">CREA-PA</option>
-          <option value="">CREA-PB</option>
-          <option value="">CREA-PE</option>
-          <option value="">CREA-PI</option>
-          <option value="">CREA-PR</option>
-          <option value="">CREA-RJ</option>
-          <option value="">CREA-RN</option>
-          <option value="">CREA-RO</option>
-          <option value="">CREA-RR</option>
-          <option value="">CREA-RS</option>
-          <option value="">CREA-SC</option>
-          <option value="">CREA-SE</option>
-          <option value="">CREA-SP</option>
-          <option value="">CREA-TO</option>
+          <option value="CREA-AC">CREA-AC</option>
+          <option value="CREA-AL">CREA-AL</option>
+          <option value="CREA-AM">CREA-AM</option>
+          <option value="CREA-AP">CREA-AP</option>
+          <option value="CREA-BA">CREA-BA</option>
+          <option value="CREA-CE">CREA-CE</option>
+          <option value="CREA-DF">CREA-DF</option>
+          <option value="CREA-ES">CREA-ES</option>
+          <option value="CREA-GO">CREA-GO</option>
+          <option value="CREA-MA">CREA-MA</option>
+          <option value="CREA-MG">CREA-MG</option>
+          <option value="CREA-MS">CREA-MS</option>
+          <option value="CREA-MT">CREA-MT</option>
+          <option value="CREA-PA">CREA-PA</option>
+          <option value="CREA-PB">CREA-PB</option>
+          <option value="CREA-PE">CREA-PE</option>
+          <option value="CREA-PI">CREA-PI</option>
+          <option value="CREA-PR">CREA-PR</option>
+          <option value="CREA-RJ">CREA-RJ</option>
+          <option value="CREA-RN">CREA-RN</option>
+          <option value="CREA-RO">CREA-RO</option>
+          <option value="CREA-RR">CREA-RR</option>
+          <option value="CREA-RS">CREA-RS</option>
+          <option value="CREA-SC">CREA-SC</option>
+          <option value="CREA-SE">CREA-SE</option>
+          <option value="CREA-SP">CREA-SP</option>
+          <option value="CREA-TO">CREA-TO</option>
         </select> <label for="">Especifique a Profissão</label> <input type="text" name="text" id="text"> 
         </div>
 
@@ -79,39 +79,39 @@
 
           <div class="buttons-ART">
             <label for="">Número:</label>
-            <input type="texto" name="Número" id="Número" style="margin-right: 30px;">
+            <input type="texto" name="Número2" id="Número" style="margin-right: 30px;">
             <label for="">Data:</label>
             <input type="date" name="Data" id="Data" style="margin-right: 30px;">
             <label for="">Jurisdição:</label>
-            <select id="Jurisdição">
+            <select id="Jurisdição" name="Jurisdição">
               <option value="">--</option>
-              <option value="">CREA-AC</option>
-              <option value="">CREA-AL</option>
-              <option value="">CREA-AM</option>
-              <option value="">CREA-AP</option>
-              <option value="">CREA-BA</option>
-              <option value="">CREA-CE</option>
-              <option value="">CREA-DF</option>
-              <option value="">CREA-ES</option>
-              <option value="">CREA-GO</option>
-              <option value="">CREA-MA</option>
-              <option value="">CREA-MG</option>
-              <option value="">CREA-MS</option>
-              <option value="">CREA-MT</option>
-              <option value="">CREA-PA</option>
-              <option value="">CREA-PB</option>
-              <option value="">CREA-PE</option>
-              <option value="">CREA-PI</option>
-              <option value="">CREA-PR</option>
-              <option value="">CREA-RJ</option>
-              <option value="">CREA-RN</option>
-              <option value="">CREA-RO</option>
-              <option value="">CREA-RR</option>
-              <option value="">CREA-RS</option>
-              <option value="">CREA-SC</option>
-              <option value="">CREA-SE</option>
-              <option value="">CREA-SP</option>
-              <option value="">CREA-TO</option>
+              <option value="CREA-AC">CREA-AC</option>
+              <option value="CREA-AL">CREA-AL</option>
+              <option value="CREA-AM">CREA-AM</option>
+              <option value="CREA-AP">CREA-AP</option>
+              <option value="CREA-BA">CREA-BA</option>
+              <option value="CREA-CE">CREA-CE</option>
+              <option value="CREA-DF">CREA-DF</option>
+              <option value="CREA-ES">CREA-ES</option>
+              <option value="CREA-GO">CREA-GO</option>
+              <option value="CREA-MA">CREA-MA</option>
+              <option value="CREA-MG">CREA-MG</option>
+              <option value="CREA-MS">CREA-MS</option>
+              <option value="CREA-MT">CREA-MT</option>
+              <option value="CREA-PA">CREA-PA</option>
+              <option value="CREA-PB">CREA-PB</option>
+              <option value="CREA-PE">CREA-PE</option>
+              <option value="CREA-PI">CREA-PI</option>
+              <option value="CREA-PR">CREA-PR</option>
+              <option value="CREA-RJ">CREA-RJ</option>
+              <option value="CREA-RN">CREA-RN</option>
+              <option value="CREA-RO">CREA-RO</option>
+              <option value="CREA-RR">CREA-RR</option>
+              <option value="CREA-RS">CREA-RS</option>
+              <option value="CREA-SC">CREA-SC</option>
+              <option value="CREA-SE">CREA-SE</option>
+              <option value="CREA-SP">CREA-SP</option>
+              <option value="CREA-TO">CREA-TO</option>
             </select></div>
           
           <div class="authorization">
@@ -120,12 +120,14 @@
           <p class="authorization-dados">Autoriza a inclusão dos dados no Cadastro Público de Profissionais de Mineração a ser divulgado?</p>
 
           <div class="button-accept">
-            <input type="radio" id="option" name="Sim" value="Sim"autocomplete="off"> <label for="option">Sim</label>
+            <input type="radio" id="option" name="option" value="True"autocomplete="off"> <label for="option">Sim</label>
           </div>
           <div class="button-accept">
-            <input type="radio" id="option" name="Não" value="Não" autocomplete="off" > <label for="option">Não</label>
+            <input type="radio" id="option" name="option" value="False" autocomplete="off" > <label for="option">Não</label>
           </div>
-
+      {% for message in messages %}
+        <strong>{{message}}</strong>
+      {% endfor %}
           <div class="button-next">
             <button type="submit">Gravar</button>
           </div>

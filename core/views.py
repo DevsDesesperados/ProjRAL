@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import login,logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from core.models import Project, Engineer, CadastroOperacional, CadastroTecnico
+from core.models import Project, Engineer, CadastroOperacional,CadastroTecnico
 # Create your views here.
 
 #   sets who is the user and request to login
@@ -59,11 +59,11 @@ def submit_cadastro_legal(request):
         use = request.POST.get('use')
         if Project.objects.filter(ANM=ANM).exists():
             Project.objects.filter(ANM=ANM).update(substance=substance,use=use)
-            messages.success(request,'Processo ANM_id modificado com sucesso')
+            messages.success(request,'Processo ANM modificado com sucesso')
             return redirect('/menu/cadastrolegal')
         else:
             Project.objects.create(user=user, ANM=ANM, substance=substance, use=use)
-            messages.success(request, 'Processo ANM_id registrado com sucesso')
+            messages.success(request, 'Processo ANM registrado com sucesso')
             return redirect('/menu/cadastrolegal')
     else:
         return redirect('/menu/cadastrolegal')
@@ -74,22 +74,42 @@ def cadastro_tecnico(request):
     return render(request, 'cadastro-tec.html')
 
 def submit_cadastro_tecnico(request):
-    pass
+    if request.POST:
+        cpf = request.POST.get('CPF')
+        occupation = request.POST.get('Profissão')
+        occupation_number = request.POST.get('Número1')
+        jurisdiction = request.POST.get('jurisdiction')
+        elaboration_number = request.POST.get('Número2')
+        ral_jurisdiction = request.POST.get('Jurisdição')
+        elaboration_date = request.POST.get('Data')
+        public_authorization = request.POST.get('option')
+        if Engineer.objects.filter(cpf=cpf).exists():
+            cpf2= Engineer.objects.get(cpf=cpf)
+            CadastroTecnico.objects.create(cpf=cpf2, occupation=occupation,occupation_number=occupation_number,jurisdiction=jurisdiction,elaboration_number=elaboration_number,elaboration_date=elaboration_date,ral_jurisdiction=ral_jurisdiction,public_authorization=public_authorization)
+            messages.success(request, 'Cadastro técnico registrado com sucesso')
+            return redirect('/menu/cadastrotecnico')
+    else:
+        return redirect('/menu/cadastrotecnico')
+
 
 @login_required(login_url='/login/')
 
 def cadastro_operacional(request):
-    return render(request, 'cadastro-operacional.html')
+    user = request.user
+    anm_related = Project.objects.get(user=user)
+    anm_process = anm_related.ANM
+    record = CadastroOperacional.objects.filter(ANM=anm_process)
+    context = {'records':record}
+    return render(request, 'cadastro-operacional.html', context)
 
 def submit_cadastro_operacional(request):
     if request.POST:
-        user = request.user
         ANM_submit = request.POST.get('Process_anm')
         operational_situation = request.POST.get('ANO-BASE')
         reason = request.POST.get('Virtude')
         if Project.objects.filter(ANM=ANM_submit).exists():
             ANM= Project.objects.get(ANM=ANM_submit)
-            CadastroOperacional.objects.create(ANM_id=ANM, operational_situation=operational_situation, reason=reason)
+            CadastroOperacional.objects.create(ANM=ANM, operational_situation=operational_situation, reason=reason)
             messages.success(request, 'Cadastro operacional registrado com sucesso')
             return redirect('/menu/cadastrooperacional')
     else:
