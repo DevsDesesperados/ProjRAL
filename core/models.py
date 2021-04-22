@@ -54,3 +54,4 @@ class CadastroTecnico(models.Model):
         return self.cpf.user
 
 
+
