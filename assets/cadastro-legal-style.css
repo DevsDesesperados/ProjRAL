@@ -41,7 +41,7 @@ body{
   padding: 20px;
 }
 
-.button1{
+#button1{
   font-weight: bold;
   margin-top: 30px;
   font-size: 16px;
@@ -49,14 +49,14 @@ body{
   border-radius: 10px;
 }
 
-.exemplo{
+#exemplo{
   color: rgba(136, 136, 136, 0.904);
   font-size: 12px;
   margin-top: 5px;
   font-weight: bold;
 }
 
-.button2{
+#button2{
   color: #022a50;
   padding: 0;
   border-radius: 10px;
@@ -64,7 +64,7 @@ body{
   font-weight: bold;
 }
 
-.button_submit{
+#button_submit{
   margin-top: 30px;
   text-align: center;
 }
