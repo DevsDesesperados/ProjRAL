@@ -10,26 +10,26 @@
 </head>
 <body>
   <div id="main_container">
-    <h1 class="barra-main">Lavra >> Produção Bruta >> Movimentação da Produção Bruta</h1>
+    <h1 class="barra-main">Lavra >> Produção Bruta</h1>
 
   <div class="sub-barra">
     <h2>Movimentação da Produção Bruta</h2></div>
 
   <div class="buttons-one">
-    <label>Mina:</label>
-    <select  style="border-color: #000;">
+    <label for="mina">Mina:</label>
+    <select id="mina" style="border-color: #000;">
     <option value="select">--Selecione--</option></select> <!- This runs in the database ^^–>
 
-      <label style="margin-left: 60px;">ANM:</label>
-      <select style="border-color: #000;">
+      <label for="anm" style="margin-left: 60px;">ANM:</label>
+      <select id="anm" style="border-color: #000;">
         <option value="select">--Selecione--</option></select> <!- This runs in the database ^^–>
 
-        <label style="margin-left: 60px;">Município:</label>
-        <select style="...">
+        <label for="municipio" style="margin-left: 60px;">Município:</label>
+        <select id="municipio" style="...">
           <option value="">--Selecione--</option></select>
 
-          <label style="margin-left: 60px;">Minério:</label>
-          <select id="" style="border-color: #000;">
+          <label for="minerio" style="margin-left: 60px;">Minério:</label>
+          <select id="minerio" style="border-color: #000;">
             <option value="select" >--Selecione--</option></select> <!- This runs in the database ^^–>
   </div>
 
@@ -210,7 +210,7 @@
       <tr>
         <td style="background-color:  #022a50d2; color: #fff;">Jun</td>
         <td> <input type="text" name="pasta" class="pasta" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
-        <td> <input type="text" name="pasta" class="pasta"value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+        <td> <input type="text" name="pasta" class="pasta" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
         <td> <input type="text" name="pasta" class="pasta" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
         <td style="background-color:  #043a6d34;">0,00</td> <!- This runs in the database ^^–>
       </tr>
@@ -261,8 +261,8 @@
  <th>Substância (s) que se refere o Minério:</th>
 </tr>
 <tr>
-<td><label for=""></label>
-<select style="padding: 1% 1% 1%; margin-top: 10px; margin-left: 21px; margin-bottom: 30px;  border-color: #000;;">
+<td><label for="substance-ore"></label>
+<select id="substance-ore" style="padding: 1% 1% 1%; margin-top: 10px; margin-left: 21px; margin-bottom: 30px;  border-color: #000;;">
   <option value="select">--Selecione--</option>
   <option value="Agalmatolito (t)">Agalmatolito (t)</option>
               <option value="Aluivão Aurífero (t)">Aluivão Aurífero (t)</option>
@@ -449,7 +449,11 @@
   <div class="button-submit" >
     <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px; border-color: #000;">Gravar</button>      <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px;  border-color: #000;">Novo</button>
   </div>
-
+      
+  <div class="button-back-and-next">
+      <button type="button" style="margin-right: 850px;"><< Anterior</button> <button type="button">Próxima >></button>
+  </div>
+      
 </div>
 </body>
 </html>
