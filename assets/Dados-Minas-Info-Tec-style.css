@@ -225,3 +225,8 @@ body{
     margin-top: 50px;
     margin-left: 15px;
 }
+
+.button_next{
+  text-align: right;
+  margin-top: 25px;
+}
