@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'CFEM-Prod-Bruta-style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>proj-caract-Prod-Bruta</title>
+</head>
+<body>
+  <div id="main_container">
+    <h1 class="barra-main">Lavra >> Produção Bruta >> CFEM da Produção Bruta</h1>
+
+  <div class="sub-barra">
+    <h2>Declarar CFEM da Produção</h2></div>
+
+  <div class="buttons-one"> <! -- This runs in the database ^^-->
+    <label for="mina" style="margin-left: 80px;">Mina:</label>
+    <select id="mina" style="border-color: #000;   cursor: pointer;">
+    <option value="select">--FULL--</option></select> 
+
+    <label for="ANM" style="margin-left: 50px;">ANM:</label>
+    <select id="ANM" style="border-color: #000;   cursor: pointer;">
+    <option value="select">--FULL--</option></select>
+
+    <label for="Município" style="margin-left: 50px;">Município Principal:</label>
+    <select id="Município" style="border-color: #000;   cursor: pointer;">
+    <option value="select">--FULL--</option></select> 
+
+    <label for="Minério" style="margin-left: 50px;">Minério(s):</label>
+    <select id="Minério" style="border-color: #000;   cursor: pointer;">
+    <option value="select">--FULL--</option></select></div>
+
+    <p class="information-one">O preenchimento das informações pode ser feito de maneira offline utilizando Excel. 
+  Para realizar o download do template <a href="/">clique aqui.</a></p>
+
+  <div class="button-two">
+    <button type="submit"  style=" padding: 5px 5px 5px; margin-right: 14px; border-radius: 5px;  border-color: #000; cursor: pointer;">Escolher Arquivo</button>  <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px; border-color: #000;   cursor: pointer;">Importar</button></div>
+
+  <p class="info-two">Nenhum arquivo selecionado.</p>
+
+  <table style="width: 100%">
+    <caption style="text-align: center; font-size: 18px; border: none">CFEM</caption>
+    <tr>
+      <th>Mês</th>
+      <th>ICMS Apurado (R$)</th>
+      <th>Valor das Operações (R$)</th>
+      <th>PIS (R$)</th>
+      <th>Cofins (R$)</th>
+      <th>Frete (R$)</th>
+      <th>Seguro (R$)</th>
+      <th>IOF (R$)</th>
+      <th>ISS (R$)</th>
+    </tr>
+    <tr>
+      <td  style="background-color:  #022a50d2; color: #fff;">Jan</td>
+      <td> <input type="text" name="pasta0" id="pasta0" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta1" id="pasta1" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta2" id="pasta2" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta3" id="pasta3" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta4" id="pasta4" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta5" id="pasta5" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta6" id="pasta6" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta7" id="pasta7" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Fev</td>
+      <td> <input type="text" name="pasta8" id="pasta8" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta9" id="pasta9" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta10" id="pasta10" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta11" id="pasta11" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta12" id="pasta12" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta13" id="pasta13" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta14" id="pasta14" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta15" id="pasta15" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td  style="background-color:  #022a50d2; color: #fff;">Mar</td>
+      <td> <input type="text" name="pasta16" id="pasta16" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta17" id="pasta17" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta18" id="pasta18" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta19" id="pasta19" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta20" id="pasta20" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta21" id="pasta21" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta22" id="pasta22" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta23" id="pasta23" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td  style="background-color:  #022a50d2; color: #fff;">Abr</td>
+      <td> <input type="text" name="pasta24" id="pasta24" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta25" id="pasta25" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta26" id="pasta26" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta27" id="pasta27" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta28" id="pasta28" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta29" id="pasta29" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta30" id="pasta30" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta31" id="pasta31" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Mai</td>
+      <td> <input type="text" name="pasta32" id="pasta32" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta33" id="pasta33" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta34" id="pasta34" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta35" id="pasta35" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta36" id="pasta36" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta37" id="pasta37" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta38" id="pasta38" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta39" id="pasta39" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Jun</td>
+      <td> <input type="text" name="pasta40" id="pasta40" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta41" id="pasta41" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta42" id="pasta42" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta43" id="pasta43" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta44" id="pasta44" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta45" id="pasta45" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta46" id="pasta46" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta47" id="pasta47" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Jul</td>
+      <td> <input type="text" name="pasta48" id="pasta48" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta49" id="pasta49" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta50" id="pasta50" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta51" id="pasta51" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta52" id="pasta52" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta53" id="pasta53" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta54" id="pasta54" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta55" id="pasta55" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Ago</td>
+      <td> <input type="text" name="pasta56" id="pasta56" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta57" id="pasta57" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta58" id="pasta58" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta59" id="pasta59" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta60" id="pasta60" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta61" id="pasta61" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta62" id="pasta62" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta63" id="pasta63" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Set</td>
+      <td> <input type="text" name="pasta64" id="pasta64" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta65" id="pasta65" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta66" id="pasta66" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta67" id="pasta67" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta68" id="pasta68" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta69" id="pasta70" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta70" id="pasta71" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta71" id="pasta72" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Out</td>
+      <td> <input type="text" name="pasta73" id="pasta73" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta74" id="pasta74" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta75" id="pasta75" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta76" id="pasta76" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta77" id="pasta77" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta78" id="pasta78" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta79" id="pasta79" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta80" id="pasta80" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Nov</td>
+      <td> <input type="text" name="pasta81" id="pasta81" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta82" id="pasta82" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta83" id="pasta83" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta84" id="pasta84" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta85" id="pasta85" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta86" id="pasta86" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta87" id="pasta87" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta88" id="pasta88" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Dez</td>
+      <td> <input type="text" name="pasta89" id="pasta89" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta90" id="pasta90" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta91" id="pasta91" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta92" id="pasta92" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta93" id="pasta93" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta94" id="pasta94" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta95" id="pasta95" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta96" id="pasta96" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Dez</td>
+      <td> <input type="text" name="pasta97" id="pasta97" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta98" id="pasta98" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta99" id="pasta99" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta101" id="pasta101" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta102" id="pasta102" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta103" id="pasta103" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta104" id="pasta104" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta105" id="pasta105" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Dez</td>
+      <td> <input type="text" name="pasta106" id="pasta106" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta107" id="pasta107" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta108" id="pasta108" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta109" id="pasta109" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta110" id="pasta110" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta111" id="pasta111" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta112" id="pasta112" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td>
+      <td> <input type="text" name="pasta113" id="pasta113" value="0,00" style="padding: 2px 40px; border-radius: 4px;"></td> <!- This runs in the database ^^ –>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #022a50d2; color: #fff;">Total</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+      <td style="background-color:  #043a6d34;">0,00</td>
+    </tr>
+  </table>   <table style="width: 100%"> <! -- This runs in the database ^^-->
+    <caption style="text-align: center; font-size: 18px; border: none">CFEM</caption>
+    <tr>
+      <th style="text-align: center; font-size: 14px; border: 2px solid #022a50d2;">Mês do Recolhimento</th>
+      <th style="text-align: center; font-size: 14px; border: 2px solid #022a50d2;">Valor Total Recolhido no Mês (R$)</th>
+      <th style="text-align: center; font-size: 14px; border: 2px solid #022a50d2;">Meses de Apuração</th>    
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none;">Jan</td>
+      <td style="background-color:  #043a6d34; border: none;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none;"><p class="apuration">Jan/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34;  border: none; font-size: 13px;">Fev</td> 
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Fev/XXXX | 0,00</p></td>
+    </tr>
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Mar</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Mar/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Abr</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Abr/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Mai</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Mai/XXXX | 0,00</p></td> 
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Jun</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Jun/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Jul</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Jul/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Ago</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Ago/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Set</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Set/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Out</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Out/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none;  font-size: 13px;">Nov</td>
+      <td style="background-color:  #043a6d34; border: none;  font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Nov/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none;  font-size: 13px;">Dez</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;"><p class="apuration">Dez/XXXX | 0,00</p></td>
+    </tr>
+
+    <tr>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">Total</td>
+      <td style="background-color:  #043a6d34; border: none; font-size: 13px;">0,00</td>
+      <td style="background-color:  #043a6d34; border: none;"></td>
+    </tr>
+    </table>
+
+    <div class="button-submit" >
+      <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px; border-color: #000;">Gravar</button>      <button type="submit" style=" padding: 5px 5px 5px; border-radius: 5px;  border-color: #000;">Novo</button>
+    </div>
+  </div>  
+  </body>
+</html>
