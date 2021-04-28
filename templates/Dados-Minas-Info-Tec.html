@@ -20,10 +20,10 @@
       <! -- just not to get confused lol-->
       <p class="questionary">Lavra executada por terceiros?</p>
       <div class="button-accept">
-          <input type="radio" class="option" name="Sim" value="Sim"autocomplete="off"> <label for="option">Sim</label>
+          <input type="radio" id="option-1" name="Sim" value="true" autocomplete="off"> <label for="option-1" >Sim</label>
       </div>
       <div class="button-accept">
-          <input type="radio" class="option" name="Não" value="Não" autocomplete="off" > <label for="option">Não</label>
+          <input type="radio" id="option-2" name="Não" value="false" autocomplete="off" > <label for="option-2">Não</label>
       </div>
 
       <div class="barra-main2">
@@ -33,238 +33,237 @@
           <h2>Minérios</h2>
       </div>
       <div class="button-two">
-          <label for="">Minérios existentes na mina:</label>
+          <label for="existing_ore">Minérios existentes na mina:</label>
           <select id="existing_ore">
-              <option value="">--Selecione--</option>
-              <option value="">Agalmatolito (t)</option>
-              <option value="">Aluivão Aurífero (t)</option>
-              <option value="">Aluivão com Gemas (t)</option>
-              <option value="">Aluivão Diamantífero (t)</option>
-              <option value="">Aluivão Diamantífero e Aurífero (t)</option>
-              <option value="">Aluivão Estanífero (t)</option>
-              <option value="">Amianto (t)</option>
-              <option value="">Anortosito (t)</option>
-              <option value="">Arcósio (t)</option>
-              <option value="">Ardósia (t)</option>
-              <option value="">Areia (t)</option>
-              <option value="">Areia anortosítica (t)</option>
-              <option value="">Areia com Minerais Pesados (t)</option>
-              <option value="">Areia e Cascalho (t)</option>
-              <option value="">Areia e Seixo (t)</option>
-              <option value="">Areia Industrial (t)</option>
-              <option value="">Areia Monazítica (t)</option>
-              <option value="">Areia Quartzosa (t)</option>
-              <option value="">Arenito (t)</option>
-              <option value="">Argila (t)</option>
-              <option value="">Argila Arenosa (t)</option>
-              <option value="">Argila Bentonítica (t)</option>
-              <option value="">Argila Caulinítica (t)</option>
-              <option value="">Argila Comum e Plástica (t)</option>
-              <option value="">Argila Ferruginosa (t)</option>
-              <option value="">Argila Gibbsítica (t)</option>
-              <option value="">Argila preta (t)</option>
-              <option value="">Argila Refratária (t)</option>
-              <option value="">Argila Silicosa Refratária (t)</option>
-              <option value="">Argila Vermelha (t)</option>
-              <option value="">Argilito (t)</option>
-              <option value="">Atapulgita (t)</option>
-              <option value="">Barita (t)</option>
-              <option value="">Basalto (t)</option>
-              <option value="">Basalto com Geodos/Ágata (t)</option>
-              <option value="">Bauxita Grau Metalúrgico (t)</option>
-              <option value="">Bauxita Grau Não Metalúrgico (t)</option>
-              <option value="">Bentonita (t)</option>
-              <option value="">Brecha (t)</option>
-              <option value="">Calcário (t)</option>
-              <option value="">Calcário Calcítico (t)</option>
-              <option value="">Calcário Dolomítico (t)</option>
-              <option value="">Calcita (t)</option>
-              <option value="">Caldasito (t)</option>
-              <option value="">Carvão Mineral (t)</option>
-              <option value="">Carvão Mineral Camada Barro Branco (t)</option>
-              <option value="">Carvão Mineral Camada Bonito (t)</option>
-              <option value="">Carvão Mineral Camada Irapuá (t)</option>
-              <option value="">Cascalho (t)</option>
-              <option value="">Cascalho Aurífero (t)</option>
-              <option value="">Cascalho com Gemas (t)</option>
-              <option value="">Cascalho Diamantífero (t)</option>
-              <option value="">Cascalho Estanífero (t)</option>
-              <option value="">Caulim (t)</option>
-              <option value="">Charnoquito (t)</option>
-              <option value="">Conchas Calcárias (t)</option>
-              <option value="">Conglomerado (t)</option>
-              <option value="">Conglomerado Diamantífero (t)</option>
-              <option value="">Criolita (t)</option>
-              <option value="">Cromita (t)</option>
-              <option value="">Cromitito (t)</option>
-              <option value="">Diabásio (t)</option>
-              <option value="">Diatomita (t)</option>
-              <option value="">Diatomito (t) </option>
-              <option value="">Diorito (t)</option>
-              <option value="">Dolomita (t) </option>
-              <option value="">Dolomito (t)</option>
-              <option value="">Esteatito (t)</option>
-              <option value="">Evaporito (t)</option>
-              <option value="">Feldspato (t)</option>
-              <option value="">Filito (t)</option>
-              <option value="">Fluorita (t)</option>
-              <option value="">Folhelho (t)</option>
-              <option value="">Folhelho Argiloso (t)</option>
-              <option value="">Fonolito (t)</option>
-              <option value="">Fosfato (t)</option>
-              <option value="">Gabro (t)</option>
-              <option value="">Geodos de Ametista e/ou Àgata (t)</option>
-              <option value="">Gibbsita (t)</option>
-              <option value="">Gipsita (t)</option>
-              <option value="">Gnaisse (t)</option>
-              <option value="">Granada (t)</option>
-              <option value="">Granito (t)</option>
-              <option value="">Granito Gnaissico (t)</option>
-              <option value="">Granito Greizenizado (t)</option>
-              <option value="">Granodiorito (t)</option>
-              <option value="">Granulito Gnaisse (t)</option>
-              <option value="">Hematita (t)</option>
-              <option value="">Itabirito (t)</option>
-              <option value="">Laterita (t)</option>
-              <option value="">Laterita Ferruginosa (t)</option>
-              <option value="">Leucofilito (t)</option>
-              <option value="">Magnesita (t)</option>
-              <option value="">Mármore (t)</option>
-              <option value="">Micaxisto (t)</option>
-              <option value="">Migmatito (t)</option>
-              <option value="">Minério com Gemas (t)</option>
-              <option value="">Minério com Terras Raras (t)</option>
-              <option value="">Minério de Alumínio (t)</option>
-              <option value="">Minério de Antimônio (t)</option>
-              <option value="">Minério de Arsênio (t)</option>
-              <option value="">Minério de Bismuto (t)</option>
-              <option value="">Minério de Cádmio (t)</option>
-              <option value="">Minério de Chumbo (t)</option>
-              <option value="">Minério de Cobalto (t)</option>
-              <option value="">Minério de Cobre (t)</option>
-              <option value="">Minério de Cromo (t)</option>
-              <option value="">Minério de Enxofre (t)</option>
-              <option value="">Minério de Estanho Primário (t)</option>
-              <option value="">Minério de Estrôncio (t)</option>
-              <option value="">Minério de Ferro (t)</option>
-              <option value="">Minério de Lítio (t)</option>
-              <option value="">Minério de Magnésio (t)</option>
-              <option value="">Minério de Manganês (t)</option>
-              <option value="">Minério de Mercúrio (t)</option>
-              <option value="">Minério de Molibdênio (t)</option>
-              <option value="">Minério de Nióbio (t)</option>
-              <option value="">Minério de Níquel</option>
-              <option value="">Minério de Platina (t)</option>
-              <option value="">Minério de Potássio (t)</option>
-              <option value="">Minério de Prata (t)</option>
-              <option value="">Minério de Silício (t)</option>
-              <option value="">Minério de Tântalo (t)</option>
-              <option value="">Minério de Terras Raras (t)</option>
-              <option value="">Minério de Titânio (t)</option>
-              <option value="">Minério de Tungstênio (t)</option>
-              <option value="">Minério de Urânio (t)</option>
-              <option value="">Minério de Vanádio (t)</option>
-              <option value="">Minério de Zinco (t)</option>
-              <option value="">Minério de Zircônio (t)</option>
-              <option value="">Nefelina Sienito (t)</option>
-              <option value="">Norito (t)</option>
-              <option value="">Ocre (t)</option>
-              <option value="">Pegmatito (t)</option>
-              <option value="">Potássio (t)</option>
-              <option value="">Quartizito (t)</option>
-              <option value="">Quartizito Ornamental (t)</option>
-              <option value="">Quartzo (t)</option>
-              <option value="">Rocha Aurífera (t)</option>
-              <option value="">Rocha Betuminosa (t)</option>
-              <option value="">Rocha Carbonática (t)</option>
-              <option value="">Rocha com Gemas (t)</option>
-              <option value="">Rocha com Mineral Ornamental (t)</option>
-              <option value="">Rocha Diamantífera (t)</option>
-              <option value="">Rocha Fosfática (t)</option>
-              <option value="">Rocha para Brita (t)</option>
-              <option value="">Rocha para Revestimento (t)</option>
-              <option value="">Rocha para Uso Industrial (t)</option>
-              <option value="">Rocha Potássica (t)</option>
-              <option value="">Rocha Vulcânica (t)</option>
-              <option value="">Saibro (t)</option>
-              <option value="">Sais (t)</option>
-              <option value="">Salgema (t)</option>
-              <option value="">Salitre (t)</option>
-              <option value="">Sapropelito (t)</option>
-              <option value="">Seixo (t)</option>
-              <option value="">Serpentinito (t)</option>
-              <option value="">Sienito (t)</option>
-              <option value="">Sílex (t)</option>
-              <option value="">Siltito (t)</option>
-              <option value="">Silvanita (t)</option>
-              <option value="">Talco (t)</option>
-              <option value="">Talco Cerâmico (t)</option>
-              <option value="">Tinguaíto (t)</option>
-              <option value="">Tonalito (t)</option>
-              <option value="">Trona (t)</option>
-              <option value="">Tufo Vulcânico (t)</option>
-              <option value="">Turfa (t)</option>
-              <option value="">Varvito (t)</option>
-              <option value="">Vermiculita (t)</option>
-              <option value="">Xisto (t)</option>
-              <option value="">Xisto Betuminoso (t)</option>
+              <option value="--Selecione--">--Selecione--</option>
+              <option value="Agalmatolito (t)">Agalmatolito (t)</option>
+              <option value="Aluivão Aurífero (t)">Aluivão Aurífero (t)</option>
+              <option value="Aluivão com Gemas (t">Aluivão com Gemas (t)</option>
+              <option value="Aluivão Diamantífero (t)">Aluivão Diamantífero (t)</option>
+              <option value="Aluivão Diamantífero e Aurífero (t)">Aluivão Diamantífero e Aurífero (t)</option>
+              <option value="Aluivão Estanífero (t)">Aluivão Estanífero (t)</option>
+              <option value="Amianto (t)">Amianto (t)</option>
+              <option value="Anortosito (t)">Anortosito (t)</option>
+              <option value="Arcósio (t)">Arcósio (t)</option>
+              <option value="Ardósia (t)">Ardósia (t)</option>
+              <option value="Areia (t)">Areia (t)</option>
+              <option value="Areia anortosítica (t)">Areia anortosítica (t)</option>
+              <option value="Areia com Minerais Pesados (t)">Areia com Minerais Pesados (t)</option>
+              <option value="Areia e Cascalho (t)">Areia e Cascalho (t)</option>
+              <option value="Areia e Seixo (t)">Areia e Seixo (t)</option>
+              <option value="Areia Industrial (t)">Areia Industrial (t)</option>
+              <option value="Areia Monazítica (t)">Areia Monazítica (t)</option>
+              <option value="Areia Quartzosa (t)">Areia Quartzosa (t)</option>
+              <option value="Arenito (t)">Arenito (t)</option>
+              <option value="Argila (t)">Argila (t)</option>
+              <option value="Argila Arenosa (t)">Argila Arenosa (t)</option>
+              <option value="Argila Bentonítica (t)">Argila Bentonítica (t)</option>
+              <option value="Argila Caulinítica (t)">Argila Caulinítica (t)</option>
+              <option value="Argila Comum e Plástica (t)">Argila Comum e Plástica (t)</option>
+              <option value="Argila Ferruginosa (t)">Argila Ferruginosa (t)</option>
+              <option value="Argila Gibbsítica (t)">Argila Gibbsítica (t)</option>
+              <option value="Argila preta (t)">Argila preta (t)</option>
+              <option value="Argila Refratária (t)">Argila Refratária (t)</option>
+              <option value="Argila Silicosa Refratária (t)">Argila Silicosa Refratária (t)</option>
+              <option value="Argila Vermelha (t)">Argila Vermelha (t)</option>
+              <option value="Argilito (t)">Argilito (t)</option>
+              <option value="Atapulgita (t)">Atapulgita (t)</option>
+              <option value="Barita (t)">Barita (t)</option>
+              <option value="Basalto (t)">Basalto (t)</option>
+              <option value="Basalto com Geodos/Ágata (t)">Basalto com Geodos/Ágata (t)</option>
+              <option value="Bauxita Grau Metalúrgico (t)">Bauxita Grau Metalúrgico (t)</option>
+              <option value="Bauxita Grau Não Metalúrgico (t)">Bauxita Grau Não Metalúrgico (t)</option>
+              <option value="Bentonita (t)">Bentonita (t)</option>
+              <option value="Brecha (t)">Brecha (t)</option>
+              <option value="Calcário (t)">Calcário (t)</option>
+              <option value="Calcário Calcítico (t)">Calcário Calcítico (t)</option>
+              <option value="Calcário Dolomítico (t)">Calcário Dolomítico (t)</option>
+              <option value="Calcita (t)">Calcita (t)</option>
+              <option value="Caldasito (t)">Caldasito (t)</option>
+              <option value="Carvão Mineral (t)">Carvão Mineral (t)</option>
+              <option value="Carvão Mineral Camada Barro Branco (t)">Carvão Mineral Camada Barro Branco (t)</option>
+              <option value="Carvão Mineral Camada Bonito (t)">Carvão Mineral Camada Bonito (t)</option>
+              <option value="Carvão Mineral Camada Irapuá (t)">Carvão Mineral Camada Irapuá (t)</option>
+              <option value="Cascalho (t)">Cascalho (t)</option>
+              <option value="Cascalho Aurífero (t)">Cascalho Aurífero (t)</option>
+              <option value="Cascalho com Gemas (t)">Cascalho com Gemas (t)</option>
+              <option value="Cascalho Diamantífero (t)">Cascalho Diamantífero (t)</option>
+              <option value="Cascalho Estanífero (t)">Cascalho Estanífero (t)</option>
+              <option value="Caulim (t)">Caulim (t)</option>
+              <option value="Charnoquito (t)">Charnoquito (t)</option>
+              <option value="Conchas Calcárias (t)">Conchas Calcárias (t)</option>
+              <option value="Conglomerado (t)">Conglomerado (t)</option>
+              <option value="Conglomerado Diamantífero (t)">Conglomerado Diamantífero (t)</option>
+              <option value="Criolita (t)">Criolita (t)</option>
+              <option value="Cromita (t)">Cromita (t)</option>
+              <option value="Cromitito (t)">Cromitito (t)</option>
+              <option value="Diabásio (t)">Diabásio (t)</option>
+              <option value="Diatomita (t)">Diatomita (t)</option>
+              <option value="Diatomito (t)">Diatomito (t)</option>
+              <option value="Diorito (t)">Diorito (t)</option>
+              <option value="Dolomita (t)">Dolomita (t)</option>
+              <option value="Dolomito (t)">Dolomito (t)</option>
+              <option value="Esteatito (t)">Esteatito (t)</option>
+              <option value="Evaporito (t)">Evaporito (t)</option>
+              <option value="Feldspato (t)">Feldspato (t)</option>
+              <option value="Filito (t)">Filito (t)</option>
+              <option value="Fluorita (t)">Fluorita (t)</option>
+              <option value="Folhelho (t)">Folhelho (t)</option>
+              <option value="Folhelho Argiloso (t)">Folhelho Argiloso (t)</option>
+              <option value="Fonolito (t)">Fonolito (t)</option>
+              <option value="Fosfato (t)">Fosfato (t)</option>
+              <option value="Gabro (t)">Gabro (t)</option>
+              <option value="Geodos de Ametista e/ou Àgata (t)">Geodos de Ametista e/ou Àgata (t)</option>
+              <option value="Gibbsita (t)">Gibbsita (t)</option>
+              <option value="Gipsita (t)">Gipsita (t)</option>
+              <option value="Gnaisse (t)">Gnaisse (t)</option>
+              <option value="Granada (t)">Granada (t)</option>
+              <option value="Granito (t)">Granito (t)</option>
+              <option value="Granito Gnaissico (t)">Granito Gnaissico (t)</option>
+              <option value="Granito Greizenizado (t)">Granito Greizenizado (t)</option>
+              <option value="Granodiorito (t)">Granodiorito (t)</option>
+              <option value="Granulito Gnaisse (t)">Granulito Gnaisse (t)</option>
+              <option value="Hematita (t)">Hematita (t)</option>
+              <option value="Itabirito (t)">Itabirito (t)</option>
+              <option value="Laterita (t)">Laterita (t)</option>
+              <option value="Laterita Ferruginosa (t)">Laterita Ferruginosa (t)</option>
+              <option value="Leucofilito (t)">Leucofilito (t)</option>
+              <option value="Magnesita (t)">Magnesita (t)</option>
+              <option value="Mármore (t)">Mármore (t)</option>
+              <option value="Micaxisto (t)">Micaxisto (t)</option>
+              <option value="Migmatito (t)">Migmatito (t)</option>
+              <option value="Minério com Gemas (t)">Minério com Gemas (t)</option>
+              <option value="Minério com Terras Raras (t)">Minério com Terras Raras (t)</option>
+              <option value="Minério de Alumínio (t)">Minério de Alumínio (t)</option>
+              <option value="Minério de Antimônio (t)">Minério de Antimônio (t)</option>
+              <option value="Minério de Arsênio (t)">Minério de Arsênio (t)</option>
+              <option value="Minério de Bismuto (t)">Minério de Bismuto (t)</option>
+              <option value="Minério de Cádmio (t)">Minério de Cádmio (t)</option>
+              <option value="Minério de Chumbo (t)">Minério de Chumbo (t)</option>
+              <option value="Minério de Cobalto (t)">Minério de Cobalto (t)</option>
+              <option value="Minério de Cobre (t)">Minério de Cobre (t)</option>
+              <option value="Minério de Cromo (t)">Minério de Cromo (t)</option>
+              <option value="Minério de Enxofre (t)">Minério de Enxofre (t)</option>
+              <option value="Minério de Estanho Primário (t)">Minério de Estanho Primário (t)</option>
+              <option value="Minério de Estrôncio (t)">Minério de Estrôncio (t)</option>
+              <option value="Minério de Ferro (t)">Minério de Ferro (t)</option>
+              <option value="Minério de Lítio (t)">Minério de Lítio (t)</option>
+              <option value="Minério de Magnésio (t)">Minério de Magnésio (t)</option>
+              <option value="Minério de Manganês (t)">Minério de Manganês (t)</option>
+              <option value="Minério de Mercúrio (t)">Minério de Mercúrio (t)</option>
+              <option value="Minério de Molibdênio (t)">Minério de Molibdênio (t)</option>
+              <option value="Minério de Nióbio (t)">Minério de Nióbio (t)</option>
+              <option value="Minério de Níquel (t)">Minério de Níquel (t)</option>
+              <option value="Minério de Platina (t)">Minério de Platina (t)</option>
+              <option value="Minério de Potássio (t)">Minério de Potássio (t)</option>
+              <option value="Minério de Prata (t)">Minério de Prata (t)</option>
+              <option value="Minério de Silício (t)">Minério de Silício (t)</option>
+              <option value="Minério de Tântalo (t)">Minério de Tântalo (t)</option>
+              <option value="Minério de Terras Raras (t)">Minério de Terras Raras (t)</option>
+              <option value="Minério de Titânio (t)">Minério de Titânio (t)</option>
+              <option value="Minério de Tungstênio (t)">Minério de Tungstênio (t)</option>
+              <option value="Minério de Urânio (t)">Minério de Urânio (t)</option>
+              <option value="Minério de Vanádio (t)">Minério de Vanádio (t)</option>
+              <option value="Minério de Zinco (t)">Minério de Zinco (t)</option>
+              <option value="Minério de Zircônio (t)">Minério de Zircônio (t)</option>
+              <option value="Nefelina Sienito (t)">Nefelina Sienito (t)</option>
+              <option value="Norito (t)">Norito (t)</option>
+              <option value="Ocre (t)">Ocre (t)</option>
+              <option value="Pegmatito (t)">Pegmatito (t)</option>
+              <option value="Potássio (t)">Potássio (t)</option>
+              <option value="Quartizito (t)">Quartizito (t)</option>
+              <option value="Quartizito Ornamental (t)">Quartizito Ornamental (t)</option>
+              <option value="Quartzo (t)">Quartzo (t)</option>
+              <option value="Rocha Aurífera (t)">Rocha Aurífera (t)</option>
+              <option value="Rocha Betuminosa (t)">Rocha Betuminosa (t)</option>
+              <option value="Rocha Carbonática (t)">Rocha Carbonática (t)</option>
+              <option value="Rocha com Gemas (t)">Rocha com Gemas (t)</option>
+              <option value="Rocha com Mineral Ornamental (t)">Rocha com Mineral Ornamental (t)</option>
+              <option value="Rocha Diamantífera (t)">Rocha Diamantífera (t)</option>
+              <option value="Rocha Fosfática (t)">Rocha Fosfática (t)</option>
+              <option value="Rocha para Brita (t)">Rocha para Brita (t)</option>
+              <option value="Rocha para Revestimento (t)">Rocha para Revestimento (t)</option>
+              <option value="Rocha para Uso Industrial (t)">Rocha para Uso Industrial (t)</option>
+              <option value="Rocha Potássica (t)">Rocha Potássica (t)</option>
+              <option value="Rocha Vulcânica (t)">Rocha Vulcânica (t)</option>
+              <option value="Saibro (t)">Saibro (t)</option>
+              <option value="Sais (t)">Sais (t)</option>
+              <option value="Salgema (t)">Salgema (t)</option>
+              <option value="Salitre (t)">Salitre (t)</option>
+              <option value="Sapropelito (t)">Sapropelito (t)</option>
+              <option value="Seixo (t)">Seixo (t)</option>
+              <option value="Serpentinito (t)">Serpentinito (t)</option>
+              <option value="Sienito (t)">Sienito (t)</option>
+              <option value="Sílex (t)">Sílex (t)</option>
+              <option value="Siltito (t)">Siltito (t)</option>
+              <option value="Silvanita (t)">Silvanita (t)</option>
+              <option value="Talco (t)">Talco (t)</option>
+              <option value="Talco Cerâmico (t)">Talco Cerâmico (t)</option>
+              <option value="Tinguaíto (t)">Tinguaíto (t)</option>
+              <option value="Tonalito (t)">Tonalito (t)</option>
+              <option value="Trona (t)">Trona (t)</option>
+              <option value="Tufo Vulcânico (t)">Tufo Vulcânico (t)</option>
+              <option value="Turfa (t)">Turfa (t)</option>
+              <option value="Varvito (t)">Varvito (t)</option>
+              <option value="Vermiculita (t)">Vermiculita (t)</option>
+              <option value="Xisto (t)">Xisto (t)</option>
+              <option value="Xisto Betuminoso (t)">Xisto Betuminoso (t)</option>
           </select>
   </div>
 
       <div class="button-add">
-              <button value="">Adicionar</button>
+              <button value="submit">Adicionar</button>
       </div>
 
       <div class="sub-barra3">
           <h2>Métodos da Lavra</h2>
       </div>
       <div class="button-three">
-          <label for="">Modalidade dos Métodos da Lavra:</label>
-          <select class="M_Lavra">
-              <option value="">--Selecione--</option>
-              <option value="">Céu Aberto</option>
-              <option value="">Subterrânea</option>
-              <option value="">Céu Aberto e Subterrânea</option></select>
+          <label for="M-Lavra1">Modalidade dos Métodos da Lavra:</label>
+          <select id="M-Lavra1">
+              <option value="--Selecione--">--Selecione--</option>
+              <option value="Céu Aberto">Céu Aberto</option>
+              <option value="Subterrânea">Subterrânea</option>
+              <option value="Céu Aberto e Subterrânea">Céu Aberto e Subterrânea</option></select>
       </div>
       <div class="button-four">
-          <label for="">Métodos de Lavra:</label>
-          <select class="M_Lavra">
-              <option value="">--Selecione--</option>
-              <option value="">Lavra por bancada em encosta</option>
-              <option value="">Lavra em bancada em cava</option>
-              <option value="">Lavra de rochas aparelhadas c/ corte e/ou pólvora</option>
-              <option value="">Lavra de rochas aparelhadas com jet flame</option>
-              <option value="">Lavra de rochas aparelhadas com fio diamantado</option>
-              <option value="">Lavra por tiras</option>
-              <option value="">Lavra com trado (auger mining)</option>
-              <option value="">Lavra por desmonte hidráulico</option>
-              <option value="">Lavra por dragas mecânicas de arraste</option>
-              <option value="">Lavra por dragas mecânicas de sucção</option>
-              <option value="">Lavra por dragline ou shovel montadas sobre balsa</option>
-              <option value="">Lavra por dragas hidráulica por sucção direta</option>
-              <option value="">Lavra por furos de sonda</option>
-              <option value="">Lavra por lixiviação</option>
-              <option value="">Outros métodos a céu aberto</option>
-              <option value="">Realce por câmaras e pilares (room and pillar)</option>
-              <option value="">Realce por subníveis abertos (sublevel stoping)</option>
-              <option value="">Realce aberto (open stope)</option>
-              <option value="">Realce por desabamento em subníveis (sublevel caving)</option>
-              <option value="">Realce por armazenamento (shrinkage stope)</option>
-              <option value="">Realce por corte e enchimento (cut and fill stope)</option>
-              <option value="">Realce por tiras ascendentes com enchimento</option>
-              <option value="">Realce por tiras descendentes</option>
-              <option value="">Realce por tiras horizontais (vertical crater retreat)</option>
-              <option value="">Realce por desabamento do minério (block caving)</option>
-              <option value="">Realce em frente longa (long wall stope)</option>
-              <option value="">Realce em frente curta (short wall stope)</option>
-              <option value="">Realce emadeirado (timbered stope)</option>
-              <option value="">Realce emadeirado (timbered stope)</option>
-              <option value="">Outros métodos subterrâneos</option>
+          <label for="M-Lavra2">Métodos de Lavra:</label>
+          <select id="M-Lavra2">
+              <option value="--Selecione--">--Selecione--</option>
+              <option value="Lavra por bancada em encosta">Lavra por bancada em encosta</option>
+              <option value="Lavra em bancada em cava">Lavra em bancada em cava</option>
+              <option value="Lavra de rochas aparelhadas c/ corte e/ou pólvora">Lavra de rochas aparelhadas c/ corte e/ou pólvora</option>
+              <option value="Lavra de rochas aparelhadas com jet flame">Lavra de rochas aparelhadas com jet flame</option>
+              <option value="Lavra de rochas aparelhadas com fio diamantado">Lavra de rochas aparelhadas com fio diamantado</option>
+              <option value="Lavra por tiras">Lavra por tiras</option>
+              <option value="Lavra com trado (auger mining)">Lavra com trado (auger mining)</option>
+              <option value="Lavra por desmonte hidráulico">Lavra por desmonte hidráulico</option>
+              <option value="Lavra por dragas mecânicas de arraste">Lavra por dragas mecânicas de arraste</option>
+              <option value="Lavra por dragas mecânicas de sucção">Lavra por dragas mecânicas de sucção</option>
+              <option value="Lavra por dragline ou shovel montadas sobre balsa">Lavra por dragline ou shovel montadas sobre balsa</option>
+              <option value="Lavra por dragas hidráulica por sucção direta">Lavra por dragas hidráulica por sucção direta</option>
+              <option value="Lavra por furos de sonda">Lavra por furos de sonda</option>
+              <option value="Lavra por lixiviação">Lavra por lixiviação</option>
+              <option value="Outros métodos a céu aberto">Outros métodos a céu aberto</option>
+              <option value="Realce por câmaras e pilares (room and pillar)">Realce por câmaras e pilares (room and pillar)</option>
+              <option value="Realce por subníveis abertos (sublevel stoping)">Realce por subníveis abertos (sublevel stoping)</option>
+              <option value="Realce aberto (open stope)">Realce aberto (open stope)</option>
+              <option value="Realce por desabamento em subníveis (sublevel caving)">Realce por desabamento em subníveis (sublevel caving)</option>
+              <option value="Realce por armazenamento (shrinkage stope)">Realce por armazenamento (shrinkage stope)</option>
+              <option value="Realce por corte e enchimento (cut and fill stope)">Realce por corte e enchimento (cut and fill stope)</option>
+              <option value="Realce por tiras ascendentes com enchimento">Realce por tiras ascendentes com enchimento</option>
+              <option value="Realce por tiras descendentes">Realce por tiras descendentes</option>
+              <option value="Realce por tiras horizontais (vertical crater retreat)">Realce por tiras horizontais (vertical crater retreat)</option>
+              <option value="Realce por desabamento do minério (block caving)">Realce por desabamento do minério (block caving)</option>
+              <option value="Realce em frente longa (long wall stope)">Realce em frente longa (long wall stope)</option>
+              <option value="Realce em frente curta (short wall stope)">Realce em frente curta (short wall stope)</option>
+              <option value="Realce emadeirado (timbered stope)">Realce emadeirado (timbered stope)</option>
+              <option value="Outros métodos subterrâneos">Outros métodos subterrâneos</option>
               </select>
       </div>
       <div class="button-five">
-          <label for="Recuperation_lavra">Recuperação na Lavra por Método:</label>
-          <input type="text" name="Recuperation_lavra" id="Recuperation_lavra"> %
+          <label for="Recuperation-lavra">Recuperação na Lavra por Método:</label>
+          <input type="text" name="Recuperation-lavra" id="Recuperation-lavra"> %
       </div>
       
       <div class="button-add1">
@@ -275,10 +274,10 @@
           <h2>Profundidade da Mina</h2></div>
 
           <div class="form1">
-          <label for="">Atual:</label>
-          <input type="text" name="Actual" id="Actual" style="margin-right: 10px;"> 
+          <label for="actual">Atual:</label>
+          <input type="text" name="actual" id="actual" style="margin-right: 10px;"> 
 
-          <label for="">Projetada(final):</label>
+          <label for="projected_end">Projetada(final):</label>
           <input type="text" name="projected_end" id="projected_end"> m
       </div> 
 
@@ -286,9 +285,9 @@
           <h2>Relação Estéril/Minério Realizada</h2></div>
 
           <div class="form2">
-          <label for="">Estéril:</label>
+          <label for="Esteril">Estéril:</label>
           <input type="text" name="Esteril" id="Esteril" style="margin-right: 5px;"> / 
-          <label for="">Minério:</label>
+          <label for="ore">Minério:</label>
           <input type="text" name="ore" id="ore" style="margin-right: 10px;">
       </div>
 
@@ -296,13 +295,13 @@
           <h2>Capacidade Total Instalada ROM</h2></div>
 
           <div class="form3">
-          <label for=""></label>
-          <input type="text" name="" id="" style="margin-right: 10px;">
+          <label for="/"></label>
+          <input type="text" name="/" id="/" style="margin-right: 10px;">
 
-          <label for="">Unidade:</label>
-          <select>
-              <option value="">--Selecione--</option>
-              <option value="">t/ano</option>
+          <label for="list-uni">Unidade:</label>
+          <select id="list-uni">
+              <option value="--Selecione--">--Selecione--</option>
+              <option value="t/ano">t/ano</option>
           </select>
       </div>
 
@@ -310,32 +309,35 @@
           <h2>Uso de Explosivos</h2></div>
 
           <div class="form4">
-          <input type="radio" id="option1" name="Sim" value="Sim" autocomplete="off">
+          <input type="radio" id="option1" name="Sim" value="true" autocomplete="off">
           <label for="option1">Sim</label>
-          <input type="radio" id="option2" name="Não" value="Não" autocomplete="off" >
+          <input type="radio" id="option2" name="Não" value="false" autocomplete="off" >
           <label for="option2">Não</label>
       </div>
 
       <div class="buttons-end">
-          <label for="">Início de Operação:</label>
-          <input type="text" name="operation" style="margin-right: 30px;">
+          <label for="operation">Início de Operação:</label>
+          <input type="text" name="operation" id="operation" style="margin-right: 30px;">
 
-          <label for="">Vida Útil Restante da Jazida/Mina:</label>
-          <input type="text" name=""> Anos
+          <label for="life-ore">Vida Útil Restante da Jazida/Mina:</label>
+          <input type="text" name="life-ore" id="life-ore"> Anos
 
       <div class="buttons-end1">
-          <label for="">N. de Frentes de Lavra:</label>
-          <input type="text" name="" style="margin-right: 30px;">
+          <label for="lavra">N. de Frentes de Lavra:</label>
+          <input type="text" name="lavra" id="lavra" style="margin-right: 30px;">
 
-          <label for="">Grau de Mecanização:</label>
-          <select id="Mecanização">
-              <option value="">--Selecione--</option>
-              <option value="">Manual</option>
-              <option value="">Semi-Mecanizada</option>
-              <option value="">Mecanizada</option></select></div></div>
+          <label for="mecanização">Grau de Mecanização:</label>
+          <select id="mecanização">
+              <option value="--Selecione--">--Selecione--</option>
+              <option value="Manual">Manual</option>
+              <option value="Semi-Mecanizada">Semi-Mecanizada</option>
+              <option value="Mecanizada">Mecanizada</option></select></div></div>
 
       <div class="submit">
           <button type="submit">Gravar</button> <button type="submit">Cancelar</button></div>
+      </div>
+      <div class="button_next">
+           <button type="button">Próxima >></button>
       </div>
   </body>
   </html>
