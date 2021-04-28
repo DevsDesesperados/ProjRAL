@@ -19,7 +19,7 @@
         <div class="barra-principal2">
           <h2> Responsável pelo RAL >> Indentificação</h2></div>
         <div class="button-tec">  
-          <label for=" CPF" required>CPF:</label>
+          <label for="CPF" required>CPF:</label>
           <input type="text" name="CPF" id="CPF"></div>
           <h2 class="name-tec">Nome: (Nome do Responsável Tecnico pelo RAL)</h2>
 
@@ -27,22 +27,22 @@
         <h2>CREA - Registro Profissional</h2></div>
 
         <div class="buttons-CREA">
-          <label for="">Profissão:</label>
+          <label for="Profissão">Profissão:</label>
         <select id="Profissão" name="Profissão" style="margin-right: 50px;">
-          ><option value="">--Selecione--</option>
+          <option value="select">--Selecione--</option>
           <option value="Engenheiro de Minas">Engenheiro de Minas</option>
           <option value="Geólogo">Geólogo</option>
           <option value="Geólogo de Engenharia">Geólogo de Engenharia</option>
-          <option value="">Outros...</option>
+          <option value="outros">Outros</option>
         </select>
-        <label for="" >Número:</label>
-        <input type="text" name="Número1" id="Número">
+        <label for="number">Número:</label>
+        <input type="text" name="number" id="number">
         </div>
 
         <div class="button-CREA2">
-          <label for="">Jurisdição:</label>
-        <select id="jurisdiction" name="jurisdiction"  style="margin-right: 110px;">
-          <option value="">--Selecione--</option>
+          <label for="jurisdiction">Jurisdição:</label>
+        <select id="jurisdiction" name="jurisdiction" style="margin-right: 110px;">
+          <option value="select">--Selecione--</option>
           <option value="CREA-AC">CREA-AC</option>
           <option value="CREA-AL">CREA-AL</option>
           <option value="CREA-AM">CREA-AM</option>
@@ -70,7 +70,7 @@
           <option value="CREA-SE">CREA-SE</option>
           <option value="CREA-SP">CREA-SP</option>
           <option value="CREA-TO">CREA-TO</option>
-        </select> <label for="">Especifique a Profissão</label> <input type="text" name="text" id="text"> 
+        </select> <label for="text-box">Especifique a Profissão</label> <input type="text" name="text-box" id="text-box"> 
         </div>
 
         <div class="barra-principal3">
@@ -78,13 +78,13 @@
           </div>
 
           <div class="buttons-ART">
-            <label for="">Número:</label>
-            <input type="texto" name="Número2" id="Número" style="margin-right: 30px;">
-            <label for="">Data:</label>
-            <input type="date" name="Data" id="Data" style="margin-right: 30px;">
-            <label for="">Jurisdição:</label>
-            <select id="Jurisdição" name="Jurisdição">
-              <option value="">--</option>
+            <label for="number2">Número:</label>
+            <input type="texto" name="number2" id="number2" style="margin-right: 30px;">
+            <label for="date">Data:</label>
+            <input type="date" name="date" id="date" style="margin-right: 30px;">
+            <label for="jurisdiction1">Jurisdição:</label>
+            <select id="jurisdiction1" name="jurisdiction1">
+              <option value="select">--Selecione--</option>
               <option value="CREA-AC">CREA-AC</option>
               <option value="CREA-AL">CREA-AL</option>
               <option value="CREA-AM">CREA-AM</option>
@@ -120,10 +120,10 @@
           <p class="authorization-dados">Autoriza a inclusão dos dados no Cadastro Público de Profissionais de Mineração a ser divulgado?</p>
 
           <div class="button-accept">
-            <input type="radio" id="option" name="option" value="True"autocomplete="off"> <label for="option">Sim</label>
+            <input type="radio" id="option1" name="option1" value="True"autocomplete="off"> <label for="option1">Sim</label>
           </div>
           <div class="button-accept">
-            <input type="radio" id="option" name="option" value="False" autocomplete="off" > <label for="option">Não</label>
+            <input type="radio" id="option2" name="option2" value="False" autocomplete="off" > <label for="option2">Não</label>
           </div>
       {% for message in messages %}
         <strong>{{message}}</strong>
