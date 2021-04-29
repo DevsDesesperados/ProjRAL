@@ -160,6 +160,7 @@ font-size: 12px;
   margin-top: 17px;
 }
 
-.button-back-and-next{
-margin-top: 15px;
+.button-back{
+  text-align: left;
+  margin-top: 65px;
 }
